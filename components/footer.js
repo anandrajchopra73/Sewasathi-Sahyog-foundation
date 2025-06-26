@@ -52,6 +52,13 @@ export default function Footer() {
                 <Instagram size={20} />
               </a>
               <a
+                href="mailto:teamhelpinghandfoundation@gmail.com"
+                className="text-gray-400 hover:text-copper transition-colors"
+                aria-label="Send us an email"
+              >
+                <Mail size={20} />
+              </a>
+              <a
                 href="#"
                 className="text-gray-400 hover:text-copper transition-colors"
                 aria-label="Visit our Twitter page"
