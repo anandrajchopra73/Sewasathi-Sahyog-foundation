@@ -19,7 +19,6 @@ export default function Departments() {
         "Learning outcome assessment",
         "Digital literacy programs",
       ],
-      programs: ["Mobile Learning Labs", "Adult Literacy", "Digital Skills Training"],
       contact: "education@helpinghandfoundation.org",
     },
     {
@@ -34,7 +33,6 @@ export default function Departments() {
         "Healthcare worker training",
         "Community health monitoring",
       ],
-      programs: ["Mobile Health Clinics", "Maternal Health", "Vaccination Drives"],
       contact: "healthcare@helpinghandfoundation.org",
     },
     {
@@ -49,7 +47,6 @@ export default function Departments() {
         "Volunteer recruitment and management",
         "Community feedback collection",
       ],
-      programs: ["Community Mobilization", "Volunteer Programs", "Local Partnerships"],
       contact: "outreach@helpinghandfoundation.org",
     },
     {
@@ -64,7 +61,6 @@ export default function Departments() {
         "Administrative operations",
         "Financial reporting and transparency",
       ],
-      programs: ["Financial Transparency", "Donor Relations", "Operational Excellence"],
       contact: "finance@helpinghandfoundation.org",
     },
     {
@@ -79,7 +75,6 @@ export default function Departments() {
         "Content creation and storytelling",
         "Fundraising campaign support",
       ],
-      programs: ["Digital Campaigns", "Media Relations", "Awareness Programs"],
       contact: "communications@helpinghandfoundation.org",
     },
     {
@@ -95,7 +90,6 @@ export default function Departments() {
         "Best practices documentation",
         "Policy advocacy and recommendations",
       ],
-      programs: ["Impact Studies", "Innovation Labs", "Policy Research"],
       contact: "research@helpinghandfoundation.org",
     },
   ]
@@ -150,22 +144,6 @@ export default function Departments() {
                     )}
                   </ul>
                 </div>
-
-                {/* Active Programs */}
-                <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-white mb-3">Active Programs</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {dept.programs.map((program, idx) => (
-                      <span
-                        key={idx}
-                        className="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-medium border border-white/30"
-                      >
-                        {program}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
                 {/* Contact Information */}
                 <div className="pt-4 border-t border-white/20">
                   <div className="text-sm text-egg-nog/80">
