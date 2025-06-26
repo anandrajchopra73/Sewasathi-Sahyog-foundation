@@ -1,8 +1,12 @@
 "use client"
 
-import { Star, Quote } from "lucide-react"
+import { useState, useEffect } from "react"
+import { Star, Quote, ChevronLeft, ChevronRight, User } from "lucide-react"
 
 export default function Feedback() {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+
   const feedbackItems = [
     {
       name: "Maria Rodriguez",
@@ -12,6 +16,7 @@ export default function Feedback() {
       feedback:
         "HELPING HAND FOUNDATION transformed my daughter's education. The mobile learning lab brought computers and internet to our remote village for the first time. Now she dreams of becoming a software engineer!",
       date: "March 2024",
+      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "James Thompson",
@@ -21,6 +26,7 @@ export default function Feedback() {
       feedback:
         "The teacher training program completely changed how I approach education. The modern teaching methods and resources they provided have made learning so much more engaging for my students.",
       date: "February 2024",
+      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "Dr. Sarah Kim",
@@ -30,6 +36,7 @@ export default function Feedback() {
       feedback:
         "Working with HELPING HAND FOUNDATION on integrated health and education services has been incredible. Their holistic approach truly addresses the root causes of community challenges.",
       date: "January 2024",
+      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "Ahmed Hassan",
@@ -39,6 +46,7 @@ export default function Feedback() {
       feedback:
         "At 45, I never thought I'd learn to use a computer. The digital literacy program was patient, supportive, and now I can help my children with their homework and even apply for jobs online.",
       date: "March 2024",
+      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "Lisa Chen",
@@ -48,6 +56,7 @@ export default function Feedback() {
       feedback:
         "Volunteering with HELPING HAND FOUNDATION has been the most rewarding experience. Seeing the direct impact of our work on children's lives motivates me every day. The organization is well-managed and truly makes a difference.",
       date: "February 2024",
+      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "Robert Williams",
@@ -57,12 +66,39 @@ export default function Feedback() {
       feedback:
         "HELPING HAND FOUNDATION doesn't just provide services - they empower communities. They worked with us to identify our needs and built sustainable programs that continue to benefit our village long after their initial intervention.",
       date: "January 2024",
+      avatar: "/placeholder.svg?height=80&width=80",
     },
   ]
 
+  // Auto-play functionality
+  useEffect(() => {
+    if (!isAutoPlaying) return
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % feedbackItems.length)
+    }, 6000) // Change slide every 6 seconds
+
+    return () => clearInterval(interval)
+  }, [isAutoPlaying, feedbackItems.length])
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % feedbackItems.length)
+    setIsAutoPlaying(false)
+  }
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + feedbackItems.length) % feedbackItems.length)
+    setIsAutoPlaying(false)
+  }
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index)
+    setIsAutoPlaying(false)
+  }
+
   const renderStars = (rating) => {
     return Array.from({ length: 5 }, (_, index) => (
-      <Star key={index} size={16} className={index < rating ? "text-egg-nog fill-current" : "text-white/30"} />
+      <Star key={index} size={20} className={index < rating ? "text-egg-nog fill-current" : "text-white/30"} />
     ))
   }
 
@@ -93,36 +129,128 @@ export default function Feedback() {
           </div>
         </div>
 
-        {/* Feedback Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {feedbackItems.map((item, index) => (
+        {/* Main Feedback Slider */}
+        <div className="relative mb-16">
+          <div className="relative overflow-hidden rounded-lg bg-white/20 backdrop-blur-sm border border-white/20">
             <div
-              key={index}
-              className="bg-white/20 backdrop-blur-sm rounded-lg p-6 hover:bg-white/30 transition-colors duration-200 relative border border-white/20"
+              className="flex transition-transform duration-700 ease-in-out"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              <Quote className="absolute top-4 right-4 text-egg-nog/30" size={32} />
+              {feedbackItems.map((item, index) => (
+                <div key={index} className="w-full flex-shrink-0">
+                  <div className="p-8 md:p-12">
+                    {/* Quote Icon */}
+                    <div className="text-center mb-8">
+                      <Quote className="mx-auto text-egg-nog/40" size={48} />
+                    </div>
 
-              <div className="mb-4">
-                <div className="flex items-center space-x-1 mb-2">{renderStars(item.rating)}</div>
-                <p className="text-egg-nog leading-relaxed mb-4">"{item.feedback}"</p>
-              </div>
+                    {/* Main Feedback Content */}
+                    <div className="max-w-4xl mx-auto text-center">
+                      {/* Rating Stars */}
+                      <div className="flex justify-center items-center space-x-1 mb-6">{renderStars(item.rating)}</div>
 
-              <div className="border-t border-white/20 pt-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="font-semibold text-white">{item.name}</h4>
-                    <p className="text-sm text-egg-nog font-medium">{item.role}</p>
-                    <p className="text-sm text-egg-nog/80">{item.location}</p>
+                      {/* Feedback Text */}
+                      <blockquote className="text-xl md:text-2xl text-egg-nog leading-relaxed mb-8 italic">
+                        "{item.feedback}"
+                      </blockquote>
+
+                      {/* Author Information */}
+                      <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
+                        {/* Avatar */}
+                        <div className="relative">
+                          <div className="w-16 h-16 bg-gradient-to-br from-egg-nog/30 to-mustard/30 rounded-full flex items-center justify-center border-2 border-white/30">
+                            <User size={24} className="text-white" />
+                          </div>
+                        </div>
+
+                        {/* Author Details */}
+                        <div className="text-center md:text-left">
+                          <h4 className="text-xl font-semibold text-white mb-1">{item.name}</h4>
+                          <p className="text-egg-nog font-medium">{item.role}</p>
+                          <p className="text-egg-nog/80 text-sm">{item.location}</p>
+                          <p className="text-egg-nog/60 text-xs mt-1">{item.date}</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-xs text-egg-nog/60">{item.date}</div>
                 </div>
-              </div>
+              ))}
             </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-colors duration-200 border border-white/30"
+            aria-label="Previous feedback"
+          >
+            <ChevronLeft size={24} className="text-white" />
+          </button>
+
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-colors duration-200 border border-white/30"
+            aria-label="Next feedback"
+          >
+            <ChevronRight size={24} className="text-white" />
+          </button>
+        </div>
+
+        {/* Slide Indicators */}
+        <div className="flex justify-center space-x-2 mb-8">
+          {feedbackItems.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`w-3 h-3 rounded-full transition-colors duration-200 ${
+                index === currentSlide ? "bg-white" : "bg-white/40 hover:bg-white/60"
+              }`}
+              aria-label={`Go to feedback ${index + 1}`}
+            />
           ))}
         </div>
 
+        {/* Auto-play Control */}
+        <div className="text-center mb-12">
+          <button
+            onClick={() => setIsAutoPlaying(!isAutoPlaying)}
+            className="text-egg-nog hover:text-white transition-colors duration-200 text-sm"
+          >
+            {isAutoPlaying ? "Pause Auto-play" : "Resume Auto-play"}
+          </button>
+        </div>
+
+        {/* Feedback Preview Grid */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-semibold text-white text-center mb-8">All Testimonials</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {feedbackItems.map((item, index) => (
+              <div
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`bg-white/20 backdrop-blur-sm rounded-lg p-4 cursor-pointer transition-all duration-200 border border-white/20 hover:bg-white/30 ${
+                  index === currentSlide ? "ring-2 ring-white/50" : ""
+                }`}
+              >
+                <div className="flex items-center space-x-1 mb-2">
+                  {renderStars(item.rating)
+                    .slice(0, 5)
+                    .map((star, starIndex) => (
+                      <div key={starIndex} className="scale-75">
+                        {star}
+                      </div>
+                    ))}
+                </div>
+                <h4 className="text-lg font-semibold text-white mb-1">{item.name}</h4>
+                <p className="text-sm text-egg-nog mb-2">{item.role}</p>
+                <p className="text-xs text-egg-nog/80 line-clamp-2">{item.feedback.substring(0, 100)}...</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Call to Action */}
-        <div className="mt-16 text-center">
+        <div className="text-center">
           <div className="bg-white/20 backdrop-blur-sm rounded-lg p-8 border border-white/20">
             <h3 className="text-2xl font-semibold text-white mb-4">Share Your Experience</h3>
             <p className="text-egg-nog mb-6 max-w-2xl mx-auto">
