@@ -7,7 +7,6 @@ import Projects from "@/components/projects"
 import Events from "@/components/events"
 import Team from "@/components/team"
 import Feedback from "@/components/feedback"
-import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
       <Events />
       <Team />
       <Feedback />
-      <Contact />
       <Footer />
     </main>
   )
