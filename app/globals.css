@@ -12,7 +12,7 @@
       "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(135deg, #c27e35 0%, #76290b 100%);
+    background: linear-gradient(135deg, #c27e35 35%, #76290b 65%);
     min-height: 100vh;
   }
 }
