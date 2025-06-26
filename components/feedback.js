@@ -199,10 +199,10 @@ export default function Feedback() {
         {/* Call to Action */}
         <div className="text-center">
           <div className="bg-white/20 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-            <h3 className="text-2xl font-semibold text-white mb-4">Share Your Experience</h3>
+            <h3 className="text-2xl font-semibold text-white mb-4">Join us</h3>
             <p className="text-egg-nog mb-6 max-w-2xl mx-auto">
-              Have you been impacted by our work? We'd love to hear your story and share how HELPING HAND FOUNDATION has
-              made a difference in your life or community.
+                  HELPING HAND FOUNDATION
+              "Together we can, Together we will"
             </p>
             <button
               onClick={() =>
@@ -213,7 +213,7 @@ export default function Feedback() {
               }
               className="bg-white/30 hover:bg-white/40 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 border border-white/40"
             >
-              Share Your Feedback
+               सहारा बनो
             </button>
           </div>
         </div>
