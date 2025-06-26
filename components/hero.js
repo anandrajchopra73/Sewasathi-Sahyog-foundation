@@ -20,7 +20,6 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <p className="text-lg md:text-xl mb-4 font-medium tracking-wide">FREE & ACCESSIBLE</p>
         <h3 className="text-lg md:text-5xl lg:text-6xl font-bold mb-12 leading-tight">HELPING HAND FOUNDATION</h3>
 
         {/* Call to Action */}
