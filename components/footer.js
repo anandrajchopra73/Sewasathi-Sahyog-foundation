@@ -43,8 +43,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Dedicated to providing free and accessible education for all children, creating opportunities and building
-              brighter futures through learning.
+              Helping Hand Foundation is a nonprofit organization devoted to enhancing the well-being of vulnerable populations by facilitating access to quality education, comprehensive healthcare services, and essential living resources
             </p>
             <div className="flex space-x-4">
               <a
@@ -135,13 +134,13 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-mustard" />
-                <a
-                  href="mailto:teamhelpinghandfoundation@gmail.com"
-                  className="text-gray-300 hover:text-copper transition-colors"
-                >
-                  teamhelpinghandfoundation@gmail.com
-                </a>
+               <a
+                href="mailto:teamhelpinghandfoundation@gmail.com"
+                className="text-gray-400 hover:text-copper transition-colors"
+                aria-label="Send us an email"
+              >
+                <Mail size={20} className="text-mustard" />
+              </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-mustard" />
