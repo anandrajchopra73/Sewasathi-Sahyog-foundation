@@ -15,21 +15,6 @@ export default function About() {
             underserved communities. We stand by the principle: Let us serve others before ourselves.
           </p>
         </div>
-
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Our Story</h3>
-            <p className="text-gray-600 mb-4">
-              Founded with the belief that education is a fundamental right, we work tirelessly to create inclusive
-              learning environments where every child can thrive.
-            </p>
-            <p className="text-gray-600">
-              Through community partnerships, innovative programs, and dedicated volunteers, we're making education
-              accessible to underserved communities worldwide.
-            </p>
-          </div>
-          <div className="bg-gradient-to-br from-copper to-garnet rounded-lg h-64"></div>
-        </div>
       </div>
     </section>
   )
