@@ -198,26 +198,6 @@ export default function Departments() {
             )}
           </button>
         </div>
-
-        {/* Department Statistics */}
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
-            <div className="text-3xl font-bold text-white mb-2">6</div>
-            <div className="text-egg-nog">Specialized Departments</div>
-          </div>
-          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
-            <div className="text-3xl font-bold text-white mb-2">150+</div>
-            <div className="text-egg-nog">Team Members</div>
-          </div>
-          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
-            <div className="text-3xl font-bold text-white mb-2">25+</div>
-            <div className="text-egg-nog">Active Programs</div>
-          </div>
-          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
-            <div className="text-3xl font-bold text-white mb-2">98%</div>
-            <div className="text-egg-nog">Efficiency Rate</div>
-          </div>
-        </div>
       </div>
     </section>
   )
