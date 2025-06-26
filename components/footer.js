@@ -110,7 +110,13 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-mustard" />
+                 <a
+                href="mailto:teamhelpinghandfoundation@gmail.com"
+                className="text-gray-400 hover:text-copper transition-colors"
+                aria-label="Send us an email"
+              >
+                <Mail size={20} />
+              </a>
                 <span className="text-gray-300">teamhelpinghandfoundation@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
