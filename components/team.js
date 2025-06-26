@@ -2,19 +2,19 @@ export default function Team() {
   const teamMembers = [
     // Board of Trustees
     {
-      name: "Dr. Sarah Johnson",
+      name: "Aditi Chauhan",
       role: "Board of Trustees",
       category: "trustee",
       bio: "Distinguished educator and philanthropist with over 20 years of experience in nonprofit governance and educational policy development.",
     },
     {
-      name: "Michael Chen",
+      name: "Vaibhav Thakur",
       role: "Board of Trustees",
       category: "trustee",
       bio: "Former CEO of educational technology company, dedicated to leveraging innovation for social impact and community development.",
     },
     {
-      name: "Prof. Emily Rodriguez",
+      name: "Manipal Thakur",
       role: "Board of Trustees",
       category: "trustee",
       bio: "Academic leader and researcher specializing in community development and sustainable education programs for underserved populations.",
