@@ -115,7 +115,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-copper transition-colors"
                 aria-label="Send us an email"
               >
-                <Mail size={20} />
+                <Mail size={20} className="text-mustard" />
               </a>
                 <span className="text-gray-300">teamhelpinghandfoundation@gmail.com</span>
               </div>
