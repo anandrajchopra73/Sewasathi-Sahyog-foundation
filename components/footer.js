@@ -1,4 +1,4 @@
-import { Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react"
+import { Whatsapp, Instagram, Mail, Phone, MapPin } from "lucide-react"
 import Image from "next/image"
 
 export default function Footer() {
@@ -59,11 +59,11 @@ export default function Footer() {
                 <Mail size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.whatsapp.com/channel/0029Vb5f6OjGehEFTe6Xf61p?fbclid=PAQ0xDSwLKElRleHRuA2FlbQIxMAABp18boTfXPfU_EHrkpUjUsafEVWCMizdbNrd1p_O7FEQMO6GlkEhkazVSrt7B_aem_8zUBx3rGfdyh_BMl5_MFPw"
                 className="text-gray-400 hover:text-copper transition-colors"
-                aria-label="Visit our Twitter page"
+                aria-label="Visit our Whatsapp page"
               >
-                <Twitter size={20} />
+                <Whatsapp size={20} />
               </a>
             </div>
           </div>
