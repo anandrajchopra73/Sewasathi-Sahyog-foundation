@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
               <Image
-                src="/images/new-helping-hand-logo.jpg"
+                src="/images/final-helping-hand-logo.png"
                 alt="HELPING HAND FOUNDATION"
                 width={80}
                 height={80}
