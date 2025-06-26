@@ -8,7 +8,7 @@ export default function Departments() {
 
   const departments = [
     {
-      name: "Education Department",
+      name: "Human Resources & Management Department",
       icon: <GraduationCap size={48} className="text-egg-nog" />,
       head: "Dr. Sarah Johnson",
       description: "Leading educational initiatives and programs to ensure quality learning opportunities for all.",
@@ -23,7 +23,7 @@ export default function Departments() {
       contact: "education@helpinghandfoundation.org",
     },
     {
-      name: "Healthcare Department",
+      name: "Public Relations & Outreach",
       icon: <Heart size={48} className="text-egg-nog" />,
       head: "Dr. Priya Patel",
       description: "Providing comprehensive healthcare services and promoting community health and wellness.",
@@ -38,7 +38,7 @@ export default function Departments() {
       contact: "healthcare@helpinghandfoundation.org",
     },
     {
-      name: "Community Outreach",
+      name: "Research & Planning",
       icon: <Users size={48} className="text-egg-nog" />,
       head: "Michael Chen",
       description: "Building strong community partnerships and ensuring our programs reach those who need them most.",
@@ -53,7 +53,7 @@ export default function Departments() {
       contact: "outreach@helpinghandfoundation.org",
     },
     {
-      name: "Finance & Administration",
+      name: "Social Media & Content",
       icon: <DollarSign size={48} className="text-egg-nog" />,
       head: "James Wilson",
       description: "Ensuring transparent financial management and efficient organizational operations.",
@@ -68,7 +68,7 @@ export default function Departments() {
       contact: "finance@helpinghandfoundation.org",
     },
     {
-      name: "Communications & Marketing",
+      name: "Finance & Budgeting",
       icon: <Megaphone size={48} className="text-egg-nog" />,
       head: "Emily Rodriguez",
       description: "Sharing our story, raising awareness, and building support for our mission.",
@@ -83,7 +83,7 @@ export default function Departments() {
       contact: "communications@helpinghandfoundation.org",
     },
     {
-      name: "Research & Development",
+      name: "Operations & Logistics",
       icon: <FileText size={48} className="text-egg-nog" />,
       head: "Dr. Ahmed Hassan",
       description:
