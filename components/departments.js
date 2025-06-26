@@ -1,10 +1,15 @@
-import { GraduationCap, Heart, Users, DollarSign, Megaphone, FileText } from "lucide-react"
+"use client"
+
+import { useState } from "react"
+import { GraduationCap, Heart, Users, DollarSign, Megaphone, FileText, ChevronDown, ChevronUp } from "lucide-react"
 
 export default function Departments() {
+  const [showAll, setShowAll] = useState(false)
+
   const departments = [
     {
       name: "Education Department",
-      icon: <GraduationCap size={32} className="text-egg-nog" />,
+      icon: <GraduationCap size={48} className="text-egg-nog" />,
       head: "Dr. Sarah Johnson",
       description: "Leading educational initiatives and programs to ensure quality learning opportunities for all.",
       responsibilities: [
@@ -19,7 +24,7 @@ export default function Departments() {
     },
     {
       name: "Healthcare Department",
-      icon: <Heart size={32} className="text-egg-nog" />,
+      icon: <Heart size={48} className="text-egg-nog" />,
       head: "Dr. Priya Patel",
       description: "Providing comprehensive healthcare services and promoting community health and wellness.",
       responsibilities: [
@@ -34,7 +39,7 @@ export default function Departments() {
     },
     {
       name: "Community Outreach",
-      icon: <Users size={32} className="text-egg-nog" />,
+      icon: <Users size={48} className="text-egg-nog" />,
       head: "Michael Chen",
       description: "Building strong community partnerships and ensuring our programs reach those who need them most.",
       responsibilities: [
@@ -49,7 +54,7 @@ export default function Departments() {
     },
     {
       name: "Finance & Administration",
-      icon: <DollarSign size={32} className="text-egg-nog" />,
+      icon: <DollarSign size={48} className="text-egg-nog" />,
       head: "James Wilson",
       description: "Ensuring transparent financial management and efficient organizational operations.",
       responsibilities: [
@@ -64,7 +69,7 @@ export default function Departments() {
     },
     {
       name: "Communications & Marketing",
-      icon: <Megaphone size={32} className="text-egg-nog" />,
+      icon: <Megaphone size={48} className="text-egg-nog" />,
       head: "Emily Rodriguez",
       description: "Sharing our story, raising awareness, and building support for our mission.",
       responsibilities: [
@@ -79,7 +84,7 @@ export default function Departments() {
     },
     {
       name: "Research & Development",
-      icon: <FileText size={32} className="text-egg-nog" />,
+      icon: <FileText size={48} className="text-egg-nog" />,
       head: "Dr. Ahmed Hassan",
       description:
         "Conducting research to improve our programs and develop innovative solutions for community challenges.",
@@ -95,6 +100,8 @@ export default function Departments() {
     },
   ]
 
+  const visibleDepartments = showAll ? departments : departments.slice(0, 3)
+
   return (
     <section id="departments" className="py-20 bg-white/10 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -106,66 +113,110 @@ export default function Departments() {
           </p>
         </div>
 
-        {/* Department Cards */}
-        <div className="space-y-8">
-          {departments.map((dept, index) => (
+        {/* Department Cards - Vertical Layout */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {visibleDepartments.map((dept, index) => (
             <div
               key={index}
-              className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20"
+              className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 border border-white/20 hover:scale-105"
             >
-              <div className="p-8">
-                <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8">
-                  {/* Department Header */}
-                  <div className="lg:w-1/3 mb-6 lg:mb-0">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="bg-white/20 p-3 rounded-full border border-white/30">{dept.icon}</div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-white">{dept.name}</h3>
-                        <p className="text-egg-nog font-medium">Head: {dept.head}</p>
-                      </div>
-                    </div>
-                    <p className="text-egg-nog mb-4">{dept.description}</p>
-                    <div className="text-sm text-egg-nog/80">
-                      <strong>Contact:</strong> {dept.contact}
-                    </div>
+              {/* Department Header */}
+              <div className="p-8 text-center border-b border-white/20">
+                <div className="bg-white/20 p-4 rounded-full w-fit mx-auto mb-4 border border-white/30">
+                  {dept.icon}
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">{dept.name}</h3>
+                <p className="text-egg-nog font-medium">Head: {dept.head}</p>
+              </div>
+
+              {/* Department Content */}
+              <div className="p-6">
+                <p className="text-egg-nog mb-6 leading-relaxed">{dept.description}</p>
+
+                {/* Key Responsibilities */}
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-white mb-3">Key Responsibilities</h4>
+                  <ul className="space-y-2">
+                    {dept.responsibilities.slice(0, 3).map((responsibility, idx) => (
+                      <li key={idx} className="flex items-start space-x-2">
+                        <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-egg-nog text-sm">{responsibility}</span>
+                      </li>
+                    ))}
+                    {dept.responsibilities.length > 3 && (
+                      <li className="text-egg-nog/60 text-sm italic">
+                        +{dept.responsibilities.length - 3} more responsibilities
+                      </li>
+                    )}
+                  </ul>
+                </div>
+
+                {/* Active Programs */}
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-white mb-3">Active Programs</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {dept.programs.map((program, idx) => (
+                      <span
+                        key={idx}
+                        className="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-medium border border-white/30"
+                      >
+                        {program}
+                      </span>
+                    ))}
                   </div>
+                </div>
 
-                  {/* Department Details */}
-                  <div className="lg:w-2/3">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      {/* Responsibilities */}
-                      <div>
-                        <h4 className="text-lg font-semibold text-white mb-3">Key Responsibilities</h4>
-                        <ul className="space-y-2">
-                          {dept.responsibilities.map((responsibility, idx) => (
-                            <li key={idx} className="flex items-start space-x-2">
-                              <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
-                              <span className="text-egg-nog text-sm">{responsibility}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      {/* Programs */}
-                      <div>
-                        <h4 className="text-lg font-semibold text-white mb-3">Active Programs</h4>
-                        <div className="space-y-2">
-                          {dept.programs.map((program, idx) => (
-                            <div
-                              key={idx}
-                              className="bg-white/20 text-white px-3 py-2 rounded-lg text-sm font-medium border border-white/30"
-                            >
-                              {program}
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
+                {/* Contact Information */}
+                <div className="pt-4 border-t border-white/20">
+                  <div className="text-sm text-egg-nog/80">
+                    <strong className="text-white">Contact:</strong>
+                    <br />
+                    <a
+                      href={`mailto:${dept.contact}`}
+                      className="text-egg-nog hover:text-white transition-colors duration-200 underline"
+                    >
+                      {dept.contact}
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Read More / Show Less Button */}
+        <div className="text-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="bg-white/30 hover:bg-white/40 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 border border-white/40 inline-flex items-center space-x-2 group"
+          >
+            <span>{showAll ? "Show Less Departments" : "Read More Departments"}</span>
+            {showAll ? (
+              <ChevronUp size={20} className="group-hover:-translate-y-1 transition-transform duration-200" />
+            ) : (
+              <ChevronDown size={20} className="group-hover:translate-y-1 transition-transform duration-200" />
+            )}
+          </button>
+        </div>
+
+        {/* Department Statistics */}
+        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
+            <div className="text-3xl font-bold text-white mb-2">6</div>
+            <div className="text-egg-nog">Specialized Departments</div>
+          </div>
+          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
+            <div className="text-3xl font-bold text-white mb-2">150+</div>
+            <div className="text-egg-nog">Team Members</div>
+          </div>
+          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
+            <div className="text-3xl font-bold text-white mb-2">25+</div>
+            <div className="text-egg-nog">Active Programs</div>
+          </div>
+          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
+            <div className="text-3xl font-bold text-white mb-2">98%</div>
+            <div className="text-egg-nog">Efficiency Rate</div>
+          </div>
         </div>
       </div>
     </section>
