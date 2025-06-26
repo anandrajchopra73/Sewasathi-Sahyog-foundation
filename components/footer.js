@@ -26,8 +26,8 @@ export default function Footer() {
               brighter futures through learning.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-copper transition-colors">
-                <Facebook size={20} />
+              <a href="https://www.instagram.com/helpinghand.foundation_?igsh=aW53MzFyMHk0ejBl" className="text-gray-400 hover:text-copper transition-colors">
+                <LinkdIn size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-copper transition-colors">
                 <Twitter size={20} />
