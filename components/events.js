@@ -181,29 +181,6 @@ export default function Events() {
             {isAutoPlaying ? "Pause Auto-play" : "Resume Auto-play"}
           </button>
         </div>
-
-        {/* Event List Preview */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-semibold text-white text-center mb-8">All Upcoming Events</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {events.map((event, index) => (
-              <div
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`bg-white/20 backdrop-blur-sm rounded-lg p-4 cursor-pointer transition-all duration-200 border border-white/20 hover:bg-white/30 ${
-                  index === currentSlide ? "ring-2 ring-white/50" : ""
-                }`}
-              >
-                <div className="text-sm text-egg-nog mb-2">{event.date}</div>
-                <h4 className="text-lg font-semibold text-white mb-2">{event.title}</h4>
-                <div className="flex items-center space-x-2 text-sm text-egg-nog">
-                  <MapPin size={14} />
-                  <span>{event.location}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )
