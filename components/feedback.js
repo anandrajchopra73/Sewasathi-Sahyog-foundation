@@ -106,23 +106,6 @@ export default function Feedback() {
             the real impact of our work in communities around the world.
           </p>
         </div>
-
-        {/* Feedback Stats */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">500+</div>
-            <div className="text-egg-nog">Families Served</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">98%</div>
-            <div className="text-egg-nog">Satisfaction Rate</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">50+</div>
-            <div className="text-egg-nog">Communities Reached</div>
-          </div>
-        </div>
-
         {/* Main Feedback Slider */}
         <div className="relative mb-16">
           <div className="relative overflow-hidden rounded-lg bg-white/20 backdrop-blur-sm border border-white/20">
