@@ -32,7 +32,7 @@ export default function Footer() {
               <a href="#" className="text-gray-400 hover:text-copper transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-copper transition-colors">
+              <a href="https://www.instagram.com/helpinghand.foundation_?igsh=aW53MzFyMHk0ejBl" className="text-gray-400 hover:text-copper transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
@@ -81,15 +81,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-mustard" />
-                <span className="text-gray-300">info@choosequality.org</span>
+                <span className="text-gray-300">teamhelpinghandfoundation@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-mustard" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91 9199664444</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={16} className="text-mustard" />
-                <span className="text-gray-300">123 Education St, Learning City</span>
+                <span className="text-gray-300">Pan India</span>
               </div>
             </div>
           </div>
