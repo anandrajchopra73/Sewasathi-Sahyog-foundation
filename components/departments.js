@@ -4,7 +4,7 @@ export default function Departments() {
   const departments = [
     {
       name: "Education Department",
-      icon: <GraduationCap size={32} className="text-copper" />,
+      icon: <GraduationCap size={32} className="text-egg-nog" />,
       head: "Dr. Sarah Johnson",
       description: "Leading educational initiatives and programs to ensure quality learning opportunities for all.",
       responsibilities: [
@@ -19,7 +19,7 @@ export default function Departments() {
     },
     {
       name: "Healthcare Department",
-      icon: <Heart size={32} className="text-copper" />,
+      icon: <Heart size={32} className="text-egg-nog" />,
       head: "Dr. Priya Patel",
       description: "Providing comprehensive healthcare services and promoting community health and wellness.",
       responsibilities: [
@@ -34,7 +34,7 @@ export default function Departments() {
     },
     {
       name: "Community Outreach",
-      icon: <Users size={32} className="text-copper" />,
+      icon: <Users size={32} className="text-egg-nog" />,
       head: "Michael Chen",
       description: "Building strong community partnerships and ensuring our programs reach those who need them most.",
       responsibilities: [
@@ -49,7 +49,7 @@ export default function Departments() {
     },
     {
       name: "Finance & Administration",
-      icon: <DollarSign size={32} className="text-copper" />,
+      icon: <DollarSign size={32} className="text-egg-nog" />,
       head: "James Wilson",
       description: "Ensuring transparent financial management and efficient organizational operations.",
       responsibilities: [
@@ -64,7 +64,7 @@ export default function Departments() {
     },
     {
       name: "Communications & Marketing",
-      icon: <Megaphone size={32} className="text-copper" />,
+      icon: <Megaphone size={32} className="text-egg-nog" />,
       head: "Emily Rodriguez",
       description: "Sharing our story, raising awareness, and building support for our mission.",
       responsibilities: [
@@ -79,7 +79,7 @@ export default function Departments() {
     },
     {
       name: "Research & Development",
-      icon: <FileText size={32} className="text-copper" />,
+      icon: <FileText size={32} className="text-egg-nog" />,
       head: "Dr. Ahmed Hassan",
       description:
         "Conducting research to improve our programs and develop innovative solutions for community challenges.",
@@ -96,11 +96,11 @@ export default function Departments() {
   ]
 
   return (
-    <section id="departments" className="py-20 bg-gray-50">
+    <section id="departments" className="py-20 bg-white/10 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Our Departments</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Our Departments</h2>
+          <p className="text-lg text-egg-nog max-w-3xl mx-auto">
             HELPING HAND FOUNDATION operates through specialized departments, each focused on delivering excellence in
             their respective areas while working together towards our common mission.
           </p>
@@ -111,21 +111,21 @@ export default function Departments() {
           {departments.map((dept, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200"
+              className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20"
             >
               <div className="p-8">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8">
                   {/* Department Header */}
                   <div className="lg:w-1/3 mb-6 lg:mb-0">
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="bg-egg-nog/30 p-3 rounded-full">{dept.icon}</div>
+                      <div className="bg-white/20 p-3 rounded-full border border-white/30">{dept.icon}</div>
                       <div>
-                        <h3 className="text-2xl font-bold text-gray-900">{dept.name}</h3>
-                        <p className="text-copper font-medium">Head: {dept.head}</p>
+                        <h3 className="text-2xl font-bold text-white">{dept.name}</h3>
+                        <p className="text-egg-nog font-medium">Head: {dept.head}</p>
                       </div>
                     </div>
-                    <p className="text-gray-600 mb-4">{dept.description}</p>
-                    <div className="text-sm text-gray-500">
+                    <p className="text-egg-nog mb-4">{dept.description}</p>
+                    <div className="text-sm text-egg-nog/80">
                       <strong>Contact:</strong> {dept.contact}
                     </div>
                   </div>
@@ -135,12 +135,12 @@ export default function Departments() {
                     <div className="grid md:grid-cols-2 gap-6">
                       {/* Responsibilities */}
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-900 mb-3">Key Responsibilities</h4>
+                        <h4 className="text-lg font-semibold text-white mb-3">Key Responsibilities</h4>
                         <ul className="space-y-2">
                           {dept.responsibilities.map((responsibility, idx) => (
                             <li key={idx} className="flex items-start space-x-2">
-                              <div className="w-2 h-2 bg-copper rounded-full mt-2 flex-shrink-0"></div>
-                              <span className="text-gray-600 text-sm">{responsibility}</span>
+                              <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
+                              <span className="text-egg-nog text-sm">{responsibility}</span>
                             </li>
                           ))}
                         </ul>
@@ -148,12 +148,12 @@ export default function Departments() {
 
                       {/* Programs */}
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-900 mb-3">Active Programs</h4>
+                        <h4 className="text-lg font-semibold text-white mb-3">Active Programs</h4>
                         <div className="space-y-2">
                           {dept.programs.map((program, idx) => (
                             <div
                               key={idx}
-                              className="bg-mustard/10 text-garnet px-3 py-2 rounded-lg text-sm font-medium"
+                              className="bg-white/20 text-white px-3 py-2 rounded-lg text-sm font-medium border border-white/30"
                             >
                               {program}
                             </div>

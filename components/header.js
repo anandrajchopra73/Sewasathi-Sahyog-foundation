@@ -37,7 +37,7 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-white shadow-sm relative z-50">
+    <header className="bg-white/10 backdrop-blur-sm shadow-sm relative z-50 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo and Foundation Name - Left Side */}
@@ -53,10 +53,10 @@ export default function Header() {
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-white leading-tight">
                 HELPING HAND FOUNDATION
               </h1>
-              <p className="text-xs md:text-sm text-copper font-medium italic leading-tight">
+              <p className="text-xs md:text-sm text-egg-nog font-medium italic leading-tight">
                 "TOGETHER WE CAN, TOGETHER WE WILL"
               </p>
             </div>
@@ -69,7 +69,7 @@ export default function Header() {
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-gray-700 hover:text-copper transition-colors duration-200 cursor-pointer text-sm font-medium whitespace-nowrap"
+                  className="text-egg-nog hover:text-white transition-colors duration-200 cursor-pointer text-sm font-medium whitespace-nowrap"
                 >
                   {item.name}
                 </button>
@@ -77,7 +77,7 @@ export default function Header() {
             </nav>
 
             {/* Mobile menu button */}
-            <button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <button className="lg:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -85,19 +85,19 @@ export default function Header() {
 
         {/* Mobile Foundation Name - Shows on small screens */}
         <div className="sm:hidden pb-3">
-          <h1 className="text-base font-bold text-gray-900 text-center">HELPING HAND FOUNDATION</h1>
-          <p className="text-xs text-copper font-medium italic text-center">"TOGETHER WE CAN, TOGETHER WE WILL"</p>
+          <h1 className="text-base font-bold text-white text-center">HELPING HAND FOUNDATION</h1>
+          <p className="text-xs text-egg-nog font-medium italic text-center">"TOGETHER WE CAN, TOGETHER WE WILL"</p>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-white/20 backdrop-blur-sm shadow-lg border-t border-white/20">
             <nav className="px-4 py-4 space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="block w-full text-left text-gray-700 hover:text-copper transition-colors duration-200 py-2 font-medium"
+                  className="block w-full text-left text-egg-nog hover:text-white transition-colors duration-200 py-2 font-medium"
                 >
                   {item.name}
                 </button>

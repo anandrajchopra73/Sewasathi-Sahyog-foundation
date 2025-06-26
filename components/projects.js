@@ -20,11 +20,11 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-white/10 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Our Projects</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Our Projects</h2>
+          <p className="text-lg text-egg-nog max-w-3xl mx-auto">
             Discover the impactful initiatives we're leading to transform education and create lasting change in
             communities worldwide.
           </p>
@@ -34,15 +34,15 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200"
+              className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 border border-white/20"
             >
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
-                <span className="bg-mustard/20 text-garnet text-xs font-medium px-2 py-1 rounded-full">
+                <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+                <span className="bg-egg-nog/30 text-white text-xs font-medium px-2 py-1 rounded-full border border-egg-nog/50">
                   {project.status}
                 </span>
               </div>
-              <p className="text-gray-600">{project.description}</p>
+              <p className="text-egg-nog">{project.description}</p>
             </div>
           ))}
         </div>

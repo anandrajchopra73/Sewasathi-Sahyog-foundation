@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="antialiased bg-gradient-to-br from-copper to-garnet min-h-screen">{children}</body>
+      <body className="antialiased bg-gradient-to-br from-copper to-garnet min-h-screen text-white">{children}</body>
     </html>
   )
 }
