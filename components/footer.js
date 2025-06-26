@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
               <Image
-                src="/images/helping-hand-logo.png"
+                src="/images/new-helping-hand-logo.jpg"
                 alt="HELPING HAND FOUNDATION"
                 width={80}
                 height={80}
@@ -43,7 +43,9 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Helping Hand Foundation is a nonprofit organization devoted to enhancing the well-being of vulnerable populations by facilitating access to quality education, comprehensive healthcare services, and essential living resources
+              Helping Hand Foundation is a nonprofit organization devoted to enhancing the well-being of vulnerable
+              populations by facilitating access to quality education, comprehensive healthcare services, and essential
+              living resources
             </p>
             <div className="flex space-x-4">
               <a
@@ -134,14 +136,14 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-               <a
-                href="mailto:teamhelpinghandfoundation@gmail.com"
-                className="text-gray-400 hover:text-copper transition-colors"
-                aria-label="Send us an email"
-              >
-                <Mail size={20} className="text-mustard" />
-              </a>
-              <span className="text-gray-300">teamhelpinghandfoundation@gmail.com</span>
+                <a
+                  href="mailto:teamhelpinghandfoundation@gmail.com"
+                  className="text-gray-400 hover:text-copper transition-colors"
+                  aria-label="Send us an email"
+                >
+                  <Mail size={20} className="text-mustard" />
+                </a>
+                <span className="text-gray-300">teamhelpinghandfoundation@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-mustard" />
