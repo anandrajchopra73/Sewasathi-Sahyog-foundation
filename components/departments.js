@@ -1,4 +1,4 @@
-import { GraduationCap, Heart, Users, DollarSign, Megaphone, FileText, Globe, BookOpen, TrendingUp } from "lucide-react"
+import { GraduationCap, Heart, Users, DollarSign, Megaphone, FileText, HandHeart, Zap, TrendingUp } from "lucide-react"
 
 export default function Departments() {
   const departments = [
@@ -95,13 +95,6 @@ export default function Departments() {
     },
   ]
 
-  const organizationalStats = [
-    { icon: <Users size={24} className="text-copper" />, number: "150+", label: "Team Members" },
-    { icon: <Globe size={24} className="text-copper" />, number: "6", label: "Departments" },
-    { icon: <BookOpen size={24} className="text-copper" />, number: "25+", label: "Active Programs" },
-    { icon: <TrendingUp size={24} className="text-copper" />, number: "98%", label: "Efficiency Rate" },
-  ]
-
   return (
     <section id="departments" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -111,20 +104,6 @@ export default function Departments() {
             HELPING HAND FOUNDATION operates through specialized departments, each focused on delivering excellence in
             their respective areas while working together towards our common mission.
           </p>
-        </div>
-
-        {/* Organizational Stats */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {organizationalStats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow duration-200"
-            >
-              <div className="flex justify-center mb-3">{stat.icon}</div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">{stat.number}</div>
-              <div className="text-gray-600">{stat.label}</div>
-            </div>
-          ))}
         </div>
 
         {/* Department Cards */}
@@ -187,6 +166,36 @@ export default function Departments() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Collaboration Section */}
+        <div className="mt-16 bg-gradient-to-r from-copper/10 to-mustard/10 rounded-lg p-8 text-center">
+          <div className="flex justify-center mb-4">
+            <HandHeart size={48} className="text-copper" />
+          </div>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Collaborative Excellence</h3>
+          <p className="text-gray-600 max-w-3xl mx-auto mb-6">
+            Our departments work in close coordination to ensure seamless service delivery and maximum impact. Through
+            regular inter-departmental meetings, shared resources, and unified goals, we maintain our commitment to
+            excellence in everything we do.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+            <div className="bg-white/50 rounded-lg p-4">
+              <Zap size={24} className="text-copper mx-auto mb-2" />
+              <div className="font-medium text-gray-900">Efficient</div>
+              <div className="text-sm text-gray-600">Streamlined processes</div>
+            </div>
+            <div className="bg-white/50 rounded-lg p-4">
+              <Users size={24} className="text-copper mx-auto mb-2" />
+              <div className="font-medium text-gray-900">Collaborative</div>
+              <div className="text-sm text-gray-600">Cross-functional teams</div>
+            </div>
+            <div className="bg-white/50 rounded-lg p-4">
+              <TrendingUp size={24} className="text-copper mx-auto mb-2" />
+              <div className="font-medium text-gray-900">Results-Driven</div>
+              <div className="text-sm text-gray-600">Measurable impact</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
