@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">About Us</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
             HELPING HAND FOUNDATION is a nonprofit organization devoted to enhancing the well-being of vulnerable
             populations by facilitating access to quality education, comprehensive healthcare services, and essential
             living resources. Our mission is grounded in humanitarian values and a commitment to long-term community
