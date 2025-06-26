@@ -14,6 +14,7 @@ export default function Header() {
     { name: "Events", href: "#events" },
     { name: "Team", href: "#team" },
     { name: "Word From our सहारा", href: "#feedback" },
+    { name: "Contact", href: "#contact" },
   ]
 
   const handleNavClick = (href) => {
