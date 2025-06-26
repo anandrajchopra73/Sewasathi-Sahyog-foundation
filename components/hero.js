@@ -14,14 +14,14 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(30, 50, 38, 0.6), rgba(30, 50, 38, 0.4)), url('/placeholder.svg?height=800&width=1200')`,
+          backgroundImage: `linear-gradient(rgba(30, 50, 38, 0.6), rgba(30, 50, 38, 0.4)), url('/images/foundation-activities-collage.png')`,
         }}
       ></div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <p className="text-lg md:text-xl mb-4 font-medium tracking-wide">FREE & ACCESSIBLE</p>
-        <h3 className="text-lg md:text-5xl lg:text-6xl font-bold mb-12 leading-tight">HELPING HELP FOUNDATION</h3>
+        <h3 className="text-lg md:text-5xl lg:text-6xl font-bold mb-12 leading-tight">HELPING HAND FOUNDATION</h3>
 
         {/* Call to Action */}
         <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8 md:p-12 max-w-2xl mx-auto">
