@@ -16,7 +16,6 @@ export default function Feedback() {
       feedback:
         "HELPING HAND FOUNDATION transformed my daughter's education. The mobile learning lab brought computers and internet to our remote village for the first time. Now she dreams of becoming a software engineer!",
       date: "March 2024",
-      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "James Thompson",
@@ -26,7 +25,6 @@ export default function Feedback() {
       feedback:
         "The teacher training program completely changed how I approach education. The modern teaching methods and resources they provided have made learning so much more engaging for my students.",
       date: "February 2024",
-      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "Dr. Sarah Kim",
@@ -36,7 +34,6 @@ export default function Feedback() {
       feedback:
         "Working with HELPING HAND FOUNDATION on integrated health and education services has been incredible. Their holistic approach truly addresses the root causes of community challenges.",
       date: "January 2024",
-      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "Ahmed Hassan",
@@ -46,7 +43,6 @@ export default function Feedback() {
       feedback:
         "At 45, I never thought I'd learn to use a computer. The digital literacy program was patient, supportive, and now I can help my children with their homework and even apply for jobs online.",
       date: "March 2024",
-      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "Lisa Chen",
@@ -56,7 +52,6 @@ export default function Feedback() {
       feedback:
         "Volunteering with HELPING HAND FOUNDATION has been the most rewarding experience. Seeing the direct impact of our work on children's lives motivates me every day. The organization is well-managed and truly makes a difference.",
       date: "February 2024",
-      avatar: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "Robert Williams",
@@ -66,7 +61,6 @@ export default function Feedback() {
       feedback:
         "HELPING HAND FOUNDATION doesn't just provide services - they empower communities. They worked with us to identify our needs and built sustainable programs that continue to benefit our village long after their initial intervention.",
       date: "January 2024",
-      avatar: "/placeholder.svg?height=80&width=80",
     },
   ]
 
