@@ -12,6 +12,8 @@
       "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, #c27e35 0%, #76290b 100%);
+    min-height: 100vh;
   }
 }
 
@@ -104,7 +106,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
   }
 }
 
@@ -179,5 +181,14 @@
 
   .hover\:text-garnet:hover {
     color: #76290b;
+  }
+
+  /* Gradient background utilities */
+  .bg-copper-garnet-gradient {
+    background: linear-gradient(135deg, #c27e35 0%, #76290b 100%);
+  }
+
+  .bg-copper-garnet-gradient-reverse {
+    background: linear-gradient(135deg, #76290b 0%, #c27e35 100%);
   }
 }

@@ -11,19 +11,17 @@ import Footer from "@/components/footer"
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-br from-copper to-garnet min-h-screen">
-      <main className="min-h-screen">
-        <Header />
-        <Hero />
-        <About />
-        <Mission />
-        <Projects />
-        <Departments />
-        <Team />
-        <Events />
-        <Feedback />
-        <Footer />
-      </main>
-    </div>
+    <main className="min-h-screen">
+      <Header />
+      <Hero />
+      <About />
+      <Mission />
+      <Projects />
+      <Departments />
+      <Team />
+      <Events />
+      <Feedback />
+      <Footer />
+    </main>
   )
 }
