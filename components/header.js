@@ -1,34 +1,35 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, UserPlus } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import Image from "next/image"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Departments", href: "#departments" },
+    { name: "About Us", href: "#about" },
+    { name: "Mission", href: "#mission" },
     { name: "Projects", href: "#projects" },
-    { name: "Events", href: "#events" },
-    { name: "Team", href: "#team" },
+    { name: "Leads", href: "#team" },
+    { name: "Departments", href: "#departments" },
     { name: "Word From our सहारा", href: "#feedback" },
+    { name: "Join Us", href: "#join" },
   ]
 
   const handleNavClick = (href) => {
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+    if (href === "#join") {
+      window.open(
+        "https://docs.google.com/forms/d/e/1FAIpQLSd4ieEVJ0cCjFxN9eHzc5ZzfjBjPScTb0mAWS3hE-opi_ioDQ/viewform",
+        "_blank",
+      )
+    } else {
+      const element = document.querySelector(href)
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
     }
     setIsMenuOpen(false)
-  }
-
-  const handleJoinUsClick = () => {
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSd4ieEVJ0cCjFxN9eHzc5ZzfjBjPScTb0mAWS3hE-opi_ioDQ/viewform",
-      "_blank",
-    )
   }
 
   const handleLogoClick = () => {
@@ -75,15 +76,6 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* Join Us Button */}
-            <button
-              onClick={handleJoinUsClick}
-              className="hidden md:flex items-center space-x-2 bg-copper hover:bg-garnet text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
-            >
-              <UserPlus size={18} />
-              <span>Join Us</span>
-            </button>
-
             {/* Mobile menu button */}
             <button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -110,13 +102,6 @@ export default function Header() {
                   {item.name}
                 </button>
               ))}
-              <button
-                onClick={handleJoinUsClick}
-                className="flex items-center space-x-2 bg-copper hover:bg-garnet text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium w-full justify-center"
-              >
-                <UserPlus size={18} />
-                <span>Join Us</span>
-              </button>
             </nav>
           </div>
         )}
