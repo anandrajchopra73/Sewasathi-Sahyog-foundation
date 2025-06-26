@@ -100,7 +100,7 @@ export default function Feedback() {
     <section id="feedback" className="py-20 bg-white/10 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Community Feedback</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Word From our सहारा</h2>
           <p className="text-lg text-egg-nog max-w-3xl mx-auto">
             Hear from the people whose lives have been touched by HELPING HAND FOUNDATION. These testimonials reflect
             the real impact of our work in communities around the world.
