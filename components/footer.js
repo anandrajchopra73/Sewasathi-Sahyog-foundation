@@ -35,6 +35,9 @@ export default function Footer() {
               >
                 <Instagram size={20} />
               </a>
+              <a href="https://www.linkedin.com/company/helping-hand-foundation-2025/" className="text-gray-400 hover:text-copper transition-colors">
+                <linkedIn size={20} />
+              </a>
               <a href="#" className="text-gray-400 hover:text-copper transition-colors">
                 <Twitter size={20} />
               </a>
