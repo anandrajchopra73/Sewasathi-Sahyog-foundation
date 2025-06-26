@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@stripe/react-stripe-js':
-        specifier: latest
-        version: 3.7.0(@stripe/stripe-js@7.4.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
+        specifier: ^2.3.0
+        version: 2.3.0(@stripe/stripe-js@7.4.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
       '@stripe/stripe-js':
         specifier: latest
         version: 7.4.0
@@ -209,12 +209,12 @@ packages:
   '@rushstack/eslint-patch@1.11.0':
     resolution: {integrity: sha512-zxnHvoMQVqewTJr/W4pKjF0bMGiKJv1WX7bSrkl46Hg0QjESbzBROWK0Wg4RphzSOS5Jiy7eFimmM3UgMrMZbQ==}
 
-  '@stripe/react-stripe-js@3.7.0':
-    resolution: {integrity: sha512-PYls/2S9l0FF+2n0wHaEJsEU8x7CmBagiH7zYOsxbBlLIHEsqUIQ4MlIAbV9Zg6xwT8jlYdlRIyBTHmO3yM7kQ==}
+  '@stripe/react-stripe-js@2.3.0':
+    resolution: {integrity: sha512-AOxsvRIXfIh0WkebAfITfCQY6NgnEDg3jOH7KfHGQPjPmcxJ+HFj/EZOEuyflDjlB1iTGPDCqK0MqiQ8LjLbag==}
     peerDependencies:
-      '@stripe/stripe-js': '>=1.44.1 <8.0.0'
-      react: '>=16.8.0 <20.0.0'
-      react-dom: '>=16.8.0 <20.0.0'
+      '@stripe/stripe-js': ^1.44.1 || ^2.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
 
   '@stripe/stripe-js@7.4.0':
     resolution: {integrity: sha512-lQHQPfXPTBeh0XFjq6PqSBAyR7umwcJbvJhXV77uGCUDD6ymXJU/f2164ydLMLCCceNuPlbV9b+1smx98efwWQ==}
@@ -1925,7 +1925,7 @@ snapshots:
 
   '@rushstack/eslint-patch@1.11.0': {}
 
-  '@stripe/react-stripe-js@3.7.0(@stripe/stripe-js@7.4.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)':
+  '@stripe/react-stripe-js@2.3.0(@stripe/stripe-js@7.4.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)':
     dependencies:
       '@stripe/stripe-js': 7.4.0
       prop-types: 15.8.1

@@ -1,16 +1,4 @@
-import {
-  GraduationCap,
-  Heart,
-  Users,
-  DollarSign,
-  Megaphone,
-  FileText,
-  Zap,
-  Globe,
-  BookOpen,
-  HandHeart,
-  TrendingUp,
-} from "lucide-react"
+import { GraduationCap, Heart, Users, DollarSign, Megaphone, FileText, Globe, BookOpen, TrendingUp } from "lucide-react"
 
 export default function Departments() {
   const departments = [
@@ -199,7 +187,6 @@ export default function Departments() {
               </div>
             </div>
           ))}
-        </div>
         </div>
       </div>
     </section>

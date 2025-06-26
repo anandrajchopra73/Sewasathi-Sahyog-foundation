@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@stripe/react-stripe-js": "latest",
+    "@stripe/react-stripe-js": "^2.3.0",
     "@stripe/stripe-js": "latest",
     "@types/node": "latest",
     "class-variance-authority": "^0.7.1",

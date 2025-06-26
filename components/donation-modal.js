@@ -1,10 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { X, Heart, CreditCard, AlertCircle } from "lucide-react"
-import { Elements } from "@stripe/react-stripe-js"
-import getStripe from "@/lib/stripe"
-import CheckoutForm from "./checkout-form"
 
 export default function DonationModal({ isOpen, onClose }) {
   const [selectedAmount, setSelectedAmount] = useState(50)
@@ -22,25 +18,11 @@ export default function DonationModal({ isOpen, onClose }) {
     { value: "emergency", label: "Emergency Relief", description: "Help with urgent needs" },
   ]
 
-  // Check if Stripe is configured when modal opens
   useEffect(() => {
     if (isOpen) {
-      checkStripeConfiguration()
-    }
-  }, [isOpen])
-
-  const checkStripeConfiguration = async () => {
-    try {
-      const response = await fetch("/api/create-payment-intent")
-      const data = await response.json()
-      setStripeConfigured(data.configured)
-    } catch (error) {
-      console.error("Error checking Stripe configuration:", error)
-      setStripeConfigured(false)
-    } finally {
       setLoading(false)
     }
-  }
+  }, [isOpen])
 
   const handleAmountSelect = (amount) => {
     setSelectedAmount(amount)
@@ -56,11 +38,6 @@ export default function DonationModal({ isOpen, onClose }) {
   }
 
   const handleProceedToPayment = () => {
-    if (!stripeConfigured) {
-      alert("Payment processing is currently unavailable. Please contact us directly to make a donation.")
-      return
-    }
-
     if (selectedAmount > 0) {
       setShowPayment(true)
     }
@@ -77,28 +54,6 @@ export default function DonationModal({ isOpen, onClose }) {
 
   if (!isOpen) return null
 
-  const stripePromise = getStripe()
-
-  const appearance = {
-    theme: "stripe",
-    variables: {
-      colorPrimary: "#c27e35",
-      colorBackground: "#ffffff",
-      colorText: "#1e3226",
-      colorDanger: "#df1b41",
-      fontFamily: "system-ui, sans-serif",
-      spacingUnit: "4px",
-      borderRadius: "8px",
-    },
-  }
-
-  const options = {
-    mode: "payment",
-    amount: Math.round(selectedAmount * 100),
-    currency: "usd",
-    appearance,
-  }
-
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -106,11 +61,11 @@ export default function DonationModal({ isOpen, onClose }) {
           {/* Header */}
           <div className="flex justify-between items-center mb-6">
             <div className="flex items-center space-x-3">
-              <Heart className="text-copper" size={24} />
+              <span className="text-copper text-2xl">❤️</span>
               <h2 className="text-2xl font-bold text-gray-900">Make a Donation</h2>
             </div>
             <button onClick={onClose} className="text-gray-400 hover:text-gray-600 transition-colors">
-              <X size={24} />
+              <span className="text-2xl">✕</span>
             </button>
           </div>
 
@@ -118,21 +73,6 @@ export default function DonationModal({ isOpen, onClose }) {
             <div className="text-center py-8">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-copper mx-auto"></div>
               <p className="mt-2 text-gray-600">Loading...</p>
-            </div>
-          ) : !stripeConfigured ? (
-            <div className="text-center py-8">
-              <AlertCircle className="mx-auto text-yellow-500 mb-4" size={48} />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Payment Processing Unavailable</h3>
-              <p className="text-gray-600 mb-4">
-                Online donations are temporarily unavailable. Please contact us directly to make a donation.
-              </p>
-              <div className="bg-gray-50 rounded-lg p-4">
-                <p className="text-sm text-gray-600">
-                  <strong>Email:</strong> info@helpinghandfoundation.org
-                  <br />
-                  <strong>Phone:</strong> +1 (555) 123-4567
-                </p>
-              </div>
             </div>
           ) : !showPayment ? (
             <>
@@ -212,7 +152,7 @@ export default function DonationModal({ isOpen, onClose }) {
                 disabled={!selectedAmount || selectedAmount <= 0}
                 className="w-full bg-copper hover:bg-garnet disabled:bg-gray-300 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
               >
-                <CreditCard size={18} />
+                <span>💳</span>
                 <span>Proceed to Payment - ${selectedAmount}</span>
               </button>
             </>
@@ -229,16 +169,24 @@ export default function DonationModal({ isOpen, onClose }) {
                 </div>
               </div>
 
-              {stripePromise && (
-                <Elements stripe={stripePromise} options={options}>
-                  <CheckoutForm
-                    amount={selectedAmount}
-                    donationType={donationType}
-                    onSuccess={handlePaymentSuccess}
-                    onBack={() => setShowPayment(false)}
-                  />
-                </Elements>
-              )}
+              <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                <p className="text-sm text-gray-600">Demo mode - Payment processing disabled</p>
+              </div>
+
+              <div className="flex space-x-4">
+                <button
+                  onClick={() => setShowPayment(false)}
+                  className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                >
+                  Back
+                </button>
+                <button
+                  onClick={handlePaymentSuccess}
+                  className="flex-1 bg-copper hover:bg-garnet text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                >
+                  Complete Donation
+                </button>
+              </div>
             </>
           )}
         </div>
