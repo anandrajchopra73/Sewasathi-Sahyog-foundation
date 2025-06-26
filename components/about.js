@@ -117,8 +117,8 @@ export default function About() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Quality Education</h3>
                 <p className="text-egg-nog">
-                  Providing high-quality educational resources and opportunities for all children, regardless of their
-                  background or circumstances.
+                  Inspire minds through access to quality education, ensuring every individual has the opportunity to
+                  learn and grow.
                 </p>
               </div>
             </div>
@@ -126,10 +126,10 @@ export default function About() {
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
               <div className="h-48 bg-gradient-to-br from-mustard/30 to-egg-nog/30"></div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-3">Community Support</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Healthcare Access</h3>
                 <p className="text-egg-nog">
-                  Building strong communities that support educational initiatives and create lasting positive change in
-                  children's lives.
+                  Promote well-being through accessible healthcare services, bringing medical support to underserved
+                  communities.
                 </p>
               </div>
             </div>
@@ -137,10 +137,43 @@ export default function About() {
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
               <div className="h-48 bg-gradient-to-br from-egg-nog/20 to-mustard/20"></div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-3">Equal Access</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Food & Nutrition</h3>
                 <p className="text-egg-nog">
-                  Ensuring that every child has equal access to educational opportunities, breaking down barriers and
-                  creating pathways to success.
+                  Ensure dignity through food and nutrition support, addressing hunger and malnutrition in vulnerable
+                  populations.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
+              <div className="h-48 bg-gradient-to-br from-mustard/20 to-egg-nog/20"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-white mb-3">Women Empowerment</h3>
+                <p className="text-egg-nog">
+                  Empower women by advancing menstrual hygiene awareness and promoting gender equality in all our
+                  initiatives.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
+              <div className="h-48 bg-gradient-to-br from-egg-nog/30 to-mustard/30"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-white mb-3">Animal Care</h3>
+                <p className="text-egg-nog">
+                  Spread kindness through animal care and protection, extending our compassion to all living beings in
+                  need.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
+              <div className="h-48 bg-gradient-to-br from-mustard/30 to-egg-nog/30"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-white mb-3">Environmental Protection</h3>
+                <p className="text-egg-nog">
+                  Safeguard the planet through sustainable environmental practices, ensuring a healthier future for
+                  generations to come.
                 </p>
               </div>
             </div>
