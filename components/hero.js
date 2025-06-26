@@ -31,30 +31,36 @@ export default function Hero() {
     },
   ]
 
-  // Auto-play functionality
+  // Auto-play functionality - runs continuously
   useEffect(() => {
-    if (!isAutoPlaying) return
-
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length)
-    }, 6000) // Change slide every 6 seconds
+      if (isAutoPlaying) {
+        setCurrentSlide((prev) => (prev + 1) % slides.length)
+      }
+    }, 4000) // Change slide every 4 seconds
 
     return () => clearInterval(interval)
   }, [isAutoPlaying, slides.length])
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length)
+    // Temporarily pause auto-play when user manually navigates
     setIsAutoPlaying(false)
+    setTimeout(() => setIsAutoPlaying(true), 8000) // Resume after 8 seconds
   }
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+    // Temporarily pause auto-play when user manually navigates
     setIsAutoPlaying(false)
+    setTimeout(() => setIsAutoPlaying(true), 8000) // Resume after 8 seconds
   }
 
   const goToSlide = (index) => {
     setCurrentSlide(index)
+    // Temporarily pause auto-play when user manually navigates
     setIsAutoPlaying(false)
+    setTimeout(() => setIsAutoPlaying(true), 8000) // Resume after 8 seconds
   }
 
   const handleDonateClick = () => {
@@ -127,17 +133,6 @@ export default function Hero() {
             >
               DONATE NOW
             </button>
-            <button
-              onClick={() =>
-                window.open(
-                  "https://docs.google.com/forms/d/e/1FAIpQLSd4ieEVJ0cCjFxN9eHzc5ZzfjBjPScTb0mAWS3hE-opi_ioDQ/viewform",
-                  "_blank",
-                )
-              }
-              className="bg-transparent hover:bg-white/10 text-copper border-2 border-copper hover:border-garnet hover:text-garnet font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200"
-            >
-              JOIN US
-            </button>
           </div>
         </div>
       </div>
@@ -162,7 +157,7 @@ export default function Hero() {
           onClick={() => setIsAutoPlaying(!isAutoPlaying)}
           className="bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm transition-colors duration-200 border border-white/30"
         >
-          {isAutoPlaying ? "Pause" : "Play"}
+          {isAutoPlaying ? "⏸️ Pause" : "▶️ Play"}
         </button>
       </div>
 
@@ -173,6 +168,15 @@ export default function Hero() {
           style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
         />
       </div>
+
+      {/* Auto-play Status Indicator */}
+      {isAutoPlaying && (
+        <div className="absolute top-8 right-8 z-20">
+          <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-xs border border-white/30">
+            Auto-playing
+          </div>
+        </div>
+      )}
     </section>
   )
 }
