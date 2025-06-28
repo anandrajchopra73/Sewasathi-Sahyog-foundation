@@ -36,27 +36,26 @@ export default function Team() {
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
     },
   ]
-  
-    function ReadMore({ text, maxLength = 250 }) {
-    const [expanded, setExpanded] = React.useState(false);
-    const isLong = text.length > maxLength;
+function ReadMore({ text, maxLength = 250 }) {
+  const [expanded, setExpanded] = React.useState(false);
+  const isLong = text.length > maxLength;
 
-    const toggle = () => setExpanded((prev) => !prev);
+  const toggle = () => setExpanded((prev) => !prev);
 
-    return (
-      <p className="text-egg-nog/80">
-        {expanded || !isLong ? text : text.substring(0, maxLength) + "..."}
-        {isLong && (
-          <span
-            onClick={toggle}
-            className="text-mustard ml-2 cursor-pointer font-medium"
-          >
-            {expanded ? "Read Less" : "Read More"}
-          </span>
-        )}
-      </p>
-    );
-  }
+  return (
+    <p className="text-egg-nog/80">
+      {expanded || !isLong ? text : text.substring(0, maxLength) + "..."}
+      {isLong && (
+        <span
+          onClick={toggle}
+          className="text-mustard ml-2 cursor-pointer font-medium"
+        >
+          {expanded ? "Read Less" : "Read More"}
+        </span>
+      )}
+    </p>
+  );
+}
 
   return (
     <section id="team" className="py-20 bg-white/10 backdrop-blur-sm">
