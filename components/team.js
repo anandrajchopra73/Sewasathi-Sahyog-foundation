@@ -62,7 +62,7 @@ export default function Team() {
                     key={index}
                     className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20"
                   >
-                    <div className="h-50% w-full overflow-hidden">
+                    <div className="h-60 w-full overflow-hidden">
                       <img
                         src={member.image}
                         alt={member.name}
