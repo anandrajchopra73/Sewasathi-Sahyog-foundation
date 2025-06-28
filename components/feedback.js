@@ -14,8 +14,7 @@ export default function Feedback() {
       location: "Rural Community School",
       rating: 5,
       feedback:
-        "Being part of the NGOs social media team has been incredibly fulfilling .Sharing real stories emotions and the impact of our work online feels powerful- but nothing compares to witnessing it in person. Joining the recent drive and seeing the smiles first hand reminded me the why we do what we do.  It's more than posters and reels- it's real lives, real change.
-",
+        "Being part of the NGOs social media team has been incredibly fulfilling .Sharing real stories emotions and the impact of our work online feels powerful- but nothing compares to witnessing it in person. Joining the recent drive and seeing the smiles first hand reminded me the why we do what we do.  It's more than posters and reels- it's real lives, real change.",
       date: "March 2024",
     },
     {
