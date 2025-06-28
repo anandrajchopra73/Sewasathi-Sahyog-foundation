@@ -109,7 +109,7 @@ export default function About() {
           {/* Mission Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
-            <img src= "/quality education.jpg" width="600" height="700"/>
+            <img src= "/quality education.jpg" height="332 px" width="500 px"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Quality Education</h3>
                 <p className="text-egg-nog">
@@ -120,7 +120,7 @@ export default function About() {
             </div>
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
-            <img src= "/Healthcare Access.jpeg"/>
+            <img src= "/Healthcare Access.jpeg" height="332 px" width="500 px"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Healthcare Access</h3>
                 <p className="text-egg-nog">
@@ -131,7 +131,7 @@ export default function About() {
             </div>
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
-            <img src= "/Food & Nutrition.jpg"/>
+            <img src= "/Food & Nutrition.jpg" height="332 px" width="500 px"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Food & Nutrition</h3>
                 <p className="text-egg-nog">
@@ -142,7 +142,7 @@ export default function About() {
             </div>
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
-            <img src= "/Women Empowerment.jpg"/>
+            <img src= "/Women Empowerment.jpg" height="332 px" width="500 px"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Women Empowerment</h3>
                 <p className="text-egg-nog">
@@ -153,7 +153,7 @@ export default function About() {
             </div>
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
-            <img src= "/Animal Care.jpg"/>
+            <img src= "/Animal Care.jpg" height="332 px" width="500 px"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Animal Care</h3>
                 <p className="text-egg-nog">
@@ -164,7 +164,7 @@ export default function About() {
             </div>
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
-            <img src= "/Environmental Protection.jpeg"/>
+            <img src= "/Environmental Protection.jpeg" height="332 px" width="500 px"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Environmental Protection</h3>
                 <p className="text-egg-nog">
