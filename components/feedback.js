@@ -10,56 +10,56 @@ export default function Feedback() {
   const feedbackItems = [
     {
       name: "Lakshita Sharma",
-      role: "volunteer"
+      role: "Volunteer",
       location: "Rural Community School",
       rating: 5,
       feedback:
-        "Being part of the NGOs social media team has been incredibly fulfilling .Sharing real stories emotions and the impact of our work online feels powerful- but nothing compares to witnessing it in person. Joining the recent drive and seeing the smiles first hand reminded me the why we do what we do.  It's more than posters and reels- it's real lives, real change.",
+        "HELPING HAND FOUNDATION transformed my daughter's education. The mobile learning lab brought computers and internet to our remote village for the first time. Now she dreams of becoming a software engineer!Being part of the NGOs social media team has been incredibly fulfilling .Sharing real stories emotions and the impact of our work online feels powerful- but nothing compares to witnessing it in person. Joining the recent drive and seeing the smiles first hand reminded me the why we do what we do.  It's more than posters and reels- it's real lives, real change.",
       date: "March 2024",
     },
     {
-      name: "Jaanvi",
-      role: "volunteer",
+      name: "James Thompson",
+      role: "Teacher",
       location: "Community Education Center",
       rating: 5,
       feedback:
-        "I'm delighted to be a part of this revolutionary space. My fellows here are truly passionate about bringing about a change. From amicable people to various opportunities, the Helping Hand Foundation Helps in fostering a healthy environment not only for the ones in need but for us as human beings too. I feel like not only an aid to the society but a friend to those who have suffered for great causes",
+        "The teacher training program completely changed how I approach education. The modern teaching methods and resources they provided have made learning so much more engaging for my students.",
       date: "February 2024",
     },
     {
-      name: "Khushi Vats",
-      role: "volunteer",
+      name: "Dr. Sarah Kim",
+      role: "Healthcare Partner",
       location: "Regional Health Clinic",
       rating: 5,
       feedback:
-        "I just joined Helping Hand Life yesterday. I already feel welcomed and inspired. Even in this short time, I can sense the positive energy and dedication of everyone involved. I'm really excited to be part of a team that is making a real difference. I look forward to learning, growing, and contributing in any way I can!",
+        "Working with HELPING HAND FOUNDATION on integrated health and education services has been incredible. Their holistic approach truly addresses the root causes of community challenges.",
       date: "January 2024",
     },
     {
-      name: "Mehar",
-      role: "volunteer",
+      name: "Ahmed Hassan",
+      role: "Adult Learner",
       location: "Digital Literacy Program",
       rating: 5,
       feedback:
-        "Being a part of Helping Hand Foundation has been such a great experience. Everyone here is super kind, helpful, and always ready to support each other. The work environment is really positive and focused, which makes it fun to be involved. I also got to attend one of their offline drives, it was honestly such an overwhelming moment. It just feels really nice to be doing something meaningful for society with such an amazing team.",
+        "At 45, I never thought I'd learn to use a computer. The digital literacy program was patient, supportive, and now I can help my children with their homework and even apply for jobs online.",
       date: "March 2024",
     },
     {
-      name: "Dhriti",
-      role: "volunteer",
+      name: "Lisa Chen",
+      role: "Volunteer",
       location: "Education Outreach",
       rating: 5,
       feedback:
-        "Working with Helping Hand Foundation NGO has been a truly an enriching experience. It gave me the opportunity to contribute meaningfully to society while learning the value of compassion, teamwork, and responsibility. I gained hands-on experience in recruitment, onboarding, volunteer coordination, and internal communication. I got to interact with passionate volunteers, support team members, and help build a positive, welcoming environment. I learned a lot about communication, organizing stuff, and handling situations calmly. The friendly team made it easy to grow and learn. I’m really grateful for everything I learned and the memories I am creating as well as created while being part of this journey.",
+        "Volunteering with HELPING HAND FOUNDATION has been the most rewarding experience. Seeing the direct impact of our work on children's lives motivates me every day. The organization is well-managed and truly makes a difference.",
       date: "February 2024",
     },
     {
-      name: "Kaavya",
-      role: "volunteer",
+      name: "Robert Williams",
+      role: "Community Leader",
       location: "Village Development Committee",
       rating: 5,
       feedback:
-        "Working with Helping Hand Life has been an incredible experience. It's not just about volunteering, it's about joining a community that genuinely cares. Every project we work on brings joy to others and helps us grow as individuals. I've learned the value of teamwork, empathy, and taking action. I'm so grateful to be part of such a meaningful journey.",
+        "HELPING HAND FOUNDATION doesn't just provide services - they empower communities. They worked with us to identify our needs and built sustainable programs that continue to benefit our village long after their initial intervention.",
       date: "January 2024",
     },
   ]
