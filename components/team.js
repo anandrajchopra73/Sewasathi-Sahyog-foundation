@@ -24,15 +24,15 @@ export default function Team() {
     },
     // Board of Directors
     {
-      name: "James Wilson",
+      name: "Khushi Joshi",
       role: "Board of Directors",
       category: "director",
       image: "/aditi.jpg",
       bio: "Experienced nonprofit executive with expertise in strategic planning, fundraising, and organizational development.",
     },
     {
-      name: "Dr. Priya Patel",
-      role: "Board of Directors",
+      name: "Ruchika Agarwal",
+      role: "Coc cheif of core",
       category: "director",
       image: "/aditi.jpg",
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
