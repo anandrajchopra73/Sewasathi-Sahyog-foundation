@@ -1,14 +1,3 @@
-import { useState } from "react"
-
-const [expandedBios, setExpandedBios] = useState({})
-
-const toggleBio = (index) => {
-  setExpandedBios((prev) => ({
-    ...prev,
-    [index]: !prev[index],
-  }))
-}
-
 export default function Team() {
   const teamMembers = [
     // Board of Trustees
@@ -84,19 +73,7 @@ export default function Team() {
                     <div className="p-6">
                       <h4 className="text-xl font-semibold text-white mb-2">{member.name}</h4>
                       <p className="text-egg-nog font-medium mb-3">{member.role}</p>
-                      <p className="text-egg-nog/80 mb-2">
-                        {expandedBios[index] || member.bio.length <= 150
-                          ? member.bio
-                          : `${member.bio.slice(0, 150)}...`}
-                      </p>
-                      {member.bio.length > 150 && (
-                        <button
-                          onClick={() => toggleBio(index)}
-                          className="text-sm text-copper hover:underline"
-                        >
-                          {expandedBios[index] ? "Read Less" : "Read More"}
-                        </button>
-                      )}
+                      <p className="text-egg-nog/80">{member.bio}</p>
                     </div>
                   </div>
                 ))}
