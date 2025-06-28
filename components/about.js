@@ -131,7 +131,7 @@ export default function About() {
             </div>
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
-            <img src= "/Food & Nutrition.jpg" height="332 px" width="500 px"/>
+            <img src= "/food.jpg" height="332 px" width="500 px"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Food & Nutrition</h3>
                 <p className="text-egg-nog">
@@ -153,7 +153,7 @@ export default function About() {
             </div>
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
-            <img src= "/Animal Care.jpg" height="332 px" width="500 px"/>
+            <img src= "/Animal Care1.jpeg" height="332 px" width="500 px"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Animal Care</h3>
                 <p className="text-egg-nog">
