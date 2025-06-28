@@ -72,22 +72,19 @@ export default function About() {
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-semibold text-white">Unity</h4>
-                    <p className="text-egg-nog text-sm">Universal access to healthcare, menstrual hygiene, and nutritious food.</p>
+                    <h4 className="text-egg-nog text-sm">Universal access to healthcare, menstrual hygiene, and nutritious food.</h4>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-semibold text-white">Excellence</h4>
-                    <p className="text-egg-nog text-sm">Maintaining high standards in all our work</p>
+                    <h4 className="text-egg-nog text-sm">Promotion of overall well-being as a fundamental right.</h4>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-semibold text-white">Sustainability</h4>
-                    <p className="text-egg-nog text-sm">Building lasting solutions for communities</p>
+                    <h4 className="text-egg-nog text-sm">A future where no one is held back by basic needs and everyone thrives with dignity and purpose.</h4>
                   </div>
                 </li>
               </ul>
