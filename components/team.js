@@ -5,7 +5,7 @@ export default function Team() {
       name: "Aditi Chauhan",
       role: "Board of Trustees",
       category: "trustee",
-      image: "/aditi.jpg?height=300&width=220",
+      image: "/aditi.jpg",
       bio: "'Compassion is the bridge that connects us all.'Aditi Chauhan, the founder of Helping Hand Foundation, has embarked on a journey driven by purpose and compassion. With a passion for creating positive impact, she leverages her skills and experience to amplify meaningful causes. Starting with small gestures, Her's vision has grown into a larger mission, dedicated to providing essential support to those in hands. With extensive experience working with NGOs and communities, she has learned the value of ground-level impact and the power of collective efforts. Under her leadership, Helping Hand Foundation focuses on education, food, healthcare, and support for marginalized communities.'Empowering others is the greatest legacy we can leave behindd'.Through Helping Hand Foundation, aims to inspire a ripple effect of kindness and generosity, empowering individuals and communities to thrive. With every step forward, she remains committed to the foundation's core values of empathy, compassion, and service.",
     },
     {
@@ -62,7 +62,7 @@ export default function Team() {
                     key={index}
                     className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20"
                   >
-                    <div className="h-48 w-full overflow-hidden">
+                    <div className="h-50% w-full overflow-hidden">
                       <img
                         src={member.image}
                         alt={member.name}
