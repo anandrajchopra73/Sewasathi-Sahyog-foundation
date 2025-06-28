@@ -121,7 +121,6 @@ export default function About() {
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
             <img src= "/Healthcare Access.jpeg"/>
-              <div className="h-48 bg-gradient-to-br from-mustard/30 to-egg-nog/30"></div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Healthcare Access</h3>
                 <p className="text-egg-nog">
@@ -133,7 +132,6 @@ export default function About() {
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
             <img src= "/Food & Nutrition.jpg"/>
-              <div className="h-48 bg-gradient-to-br from-egg-nog/20 to-mustard/20"></div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Food & Nutrition</h3>
                 <p className="text-egg-nog">
@@ -145,7 +143,6 @@ export default function About() {
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
             <img src= "/Women Empowerment.jpg"/>
-              <div className="h-48 bg-gradient-to-br from-mustard/20 to-egg-nog/20"></div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Women Empowerment</h3>
                 <p className="text-egg-nog">
@@ -157,7 +154,6 @@ export default function About() {
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
             <img src= "/Animal Care.jpg"/>
-              <div className="h-48 bg-gradient-to-br from-egg-nog/30 to-mustard/30"></div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Animal Care</h3>
                 <p className="text-egg-nog">
@@ -169,7 +165,6 @@ export default function About() {
 
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
             <img src= "/Environmental Protection.jpeg"/>
-              <div className="h-48 bg-gradient-to-br from-mustard/30 to-egg-nog/30"></div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Environmental Protection</h3>
                 <p className="text-egg-nog">
