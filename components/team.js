@@ -1,23 +1,3 @@
-import { useState } from 'react'
-
-function ReadMore({ text, maxLength = 250 }) {
-  const [expanded, setExpanded] = useState(false);
-
-  if (text.length <= maxLength) return <span>{text}</span>;
-
-  return (
-    <>
-      {expanded ? text : text.slice(0, maxLength) + '...'}
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="text-mustard ml-2 underline font-medium"
-      >
-        {expanded ? 'Read Less' : 'Read More'}
-      </button>
-    </>
-  );
-}
-
 export default function Team() {
   const teamMembers = [
     // Board of Trustees
@@ -93,9 +73,7 @@ export default function Team() {
                     <div className="p-6">
                       <h4 className="text-xl font-semibold text-white mb-2">{member.name}</h4>
                       <p className="text-egg-nog font-medium mb-3">{member.role}</p>
-                      <p className="text-egg-nog/80">
-                        <ReadMore text={member.bio} />
-                      </p>
+                      <p className="text-egg-nog/80">{member.bio}</p>
                     </div>
                   </div>
                 ))}
