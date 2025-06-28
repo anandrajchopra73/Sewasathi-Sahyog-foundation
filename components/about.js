@@ -2,9 +2,9 @@ import { Users, Globe, BookOpen, TrendingUp } from "lucide-react"
 
 export default function About() {
   const organizationalStats = [
-    { icon: <Users size={24} className="text-egg-nog" />, number: "150+", label: "Team Members" },
+    { icon: <Users size={24} className="text-egg-nog" />, number: "50+", label: "Team Members" },
     { icon: <Globe size={24} className="text-egg-nog" />, number: "6", label: "Departments" },
-    { icon: <BookOpen size={24} className="text-egg-nog" />, number: "25+", label: "Active Programs" },
+    { icon: <BookOpen size={24} className="text-egg-nog" />, number: "7+", label: "Active Programs" },
     { icon: <TrendingUp size={24} className="text-egg-nog" />, number: "98%", label: "Efficiency Rate" },
   ]
 
