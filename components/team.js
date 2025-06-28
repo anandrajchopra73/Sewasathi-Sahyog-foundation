@@ -66,7 +66,7 @@ export default function Team() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className=" h-full object-cover"
+                        className=" h-full w-full object-cover"
                       />
                     </div>
 
@@ -91,7 +91,7 @@ export default function Team() {
                     key={index}
                     className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20"
                   >
-                    <div className="h-48 w-full overflow-hidden">
+                    <div className="h-60 w-full overflow-hidden">
                       <img
                         src={member.image}
                         alt={member.name}
