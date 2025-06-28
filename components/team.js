@@ -66,7 +66,7 @@ export default function Team() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className=" object-cover"
+                        className=" h-full object-cover"
                       />
                     </div>
 
