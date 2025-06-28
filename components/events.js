@@ -18,15 +18,6 @@ export default function Events() {
       image: "/canva.jpg",
     },
     {
-      date: "April 2, 2024",
-      title: "Volunteer Training Workshop",
-      location: "Online",
-      time: "2:00 PM - 4:00 PM",
-      description:
-        "Learn how to make a meaningful impact in your community through our comprehensive volunteer training program.",
-      image: "/placeholder.svg?height=300&width=400",
-    },
-    {
       date: "April 20, 2024",
       title: "Fundraising Gala",
       location: "Grand Hotel",
