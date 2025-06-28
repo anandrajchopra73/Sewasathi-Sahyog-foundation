@@ -27,14 +27,14 @@ export default function Team() {
       name: "Tiya Mittal",
       role: "Board of Directors",
       category: "director",
-      image: "/tiya mittle.jpg",
+      image: "/tiya mittle (1).jpg",
       bio: "Experienced nonprofit executive with expertise in strategic planning, fundraising, and organizational development.",
     },
     {
       name: "Ruchika Agarwal",
       role: "Coc cheif of core",
       category: "director",
-      image: "/ruchika agarwal.jpg",
+      image: "/ruchika agarwal (1).jpg",
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
     },
   ]
