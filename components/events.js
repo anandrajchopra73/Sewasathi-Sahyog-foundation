@@ -15,7 +15,7 @@ export default function Events() {
       time: "7:00 PM",
       description:
         "We are thrilled to announce that the Canva Workshop starts today! 🎉 This beginner-friendly session is being organized by the Helping Hand Foundation to empower students and creative minds through the power of design.",
-      image: "/canva (2).jpg",
+      image: "/canva.jpg",
     },
     {
       date: "April 2, 2024",
