@@ -9,13 +9,13 @@ export default function Events() {
 
   const events = [
     {
-      date: "March 15, 2024",
-      title: "Annual Education Summit",
+      date: "27-29 June 2025",
+      title: "Canva Workshop for Beginners",
       location: "Online",
-      time: "9:00 AM - 5:00 PM",
+      time: "7:00 PM",
       description:
-        "Join us for our flagship event bringing together educators, policymakers, and community leaders to discuss the future of education.",
-      image: "/canva.jpg",
+        "We are thrilled to announce that the Canva Workshop starts today! 🎉 This beginner-friendly session is being organized by the Helping Hand Foundation to empower students and creative minds through the power of design.",
+      image: "/canva (2).jpg",
     },
     {
       date: "April 2, 2024",
