@@ -1,3 +1,14 @@
+import { useState } from "react"
+
+const [expandedBios, setExpandedBios] = useState({})
+
+const toggleBio = (index) => {
+  setExpandedBios((prev) => ({
+    ...prev,
+    [index]: !prev[index],
+  }))
+}
+
 export default function Team() {
   const teamMembers = [
     // Board of Trustees
@@ -38,16 +49,6 @@ export default function Team() {
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
     },
   ]
-import { useState } from "react"
-
-const [expandedBios, setExpandedBios] = useState({})
-
-const toggleBio = (index) => {
-  setExpandedBios((prev) => ({
-    ...prev,
-    [index]: !prev[index],
-  }))
-}
 
   return (
     <section id="team" className="py-20 bg-white/10 backdrop-blur-sm">
