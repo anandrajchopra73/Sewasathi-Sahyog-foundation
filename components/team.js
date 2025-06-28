@@ -1,3 +1,4 @@
+import { useState } from 'react';
 export default function Team() {
   const teamMembers = [
     // Board of Trustees
@@ -37,6 +38,10 @@ export default function Team() {
       image: "/ruchika agarwal (1).jpg",
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
     },
+  const [showFullBio, setShowFullBio] = useState({});
+
+  const toggleBio = (index) => {
+    setShowFullBio((prev) => ({ ...prev, [index]: !prev[index] }));
   ]
 
   return (
@@ -73,7 +78,18 @@ export default function Team() {
                     <div className="p-6">
                       <h4 className="text-xl font-semibold text-white mb-2">{member.name}</h4>
                       <p className="text-egg-nog font-medium mb-3">{member.role}</p>
-                      <p className="text-egg-nog/80">{member.bio}</p>
+                      <p className="text-egg-nog/80">
+                        {showFullBio[index] ? member.bio : `${member.bio.slice(0, 200)}...`}
+                        {member.bio.length > 200 && (
+                          <button
+                            onClick={() => toggleBio(index)}
+                            className="text-blue-300 ml-2 underline"
+                          >
+                            {showFullBio[index] ? 'Read Less' : 'Read More'}
+                          </button>
+                        )}
+                      </p>
+
                     </div>
                   </div>
                 ))}
