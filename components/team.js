@@ -16,6 +16,7 @@ function ReadMore({ text, maxLength = 200 }) {
     </span>
   );
 }
+
 export default function Team() {
   const teamMembers = [
     // Board of Trustees
@@ -42,15 +43,17 @@ export default function Team() {
     },
     // Board of Directors
     {
-      name: "James Wilson",
+      name: "Khushi Joshi",
       role: "Board of Directors",
       category: "director",
+      image: "/aditi.jpg",
       bio: "Experienced nonprofit executive with expertise in strategic planning, fundraising, and organizational development.",
     },
     {
-      name: "Dr. Priya Patel",
-      role: "Board of Directors",
+      name: "Ruchika Agarwal",
+      role: "Coc cheif of core",
       category: "director",
+      image: "/aditi.jpg",
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
     },
   ]
@@ -109,13 +112,13 @@ export default function Team() {
                     key={index}
                     className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20"
                   >
-                    <div
-                      className={`h-48 ${
-                        index === 0
-                          ? "bg-gradient-to-br from-mustard/20 to-egg-nog/20"
-                          : "bg-gradient-to-br from-egg-nog/30 to-mustard/30"
-                      }`}
-                    ></div>
+                    <div className="h-48 w-full overflow-hidden">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
                     <div className="p-6">
                       <h4 className="text-xl font-semibold text-white mb-2">{member.name}</h4>
                       <p className="text-egg-nog font-medium mb-3">{member.role}</p>
