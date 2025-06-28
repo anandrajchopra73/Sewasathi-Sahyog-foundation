@@ -109,7 +109,7 @@ export default function About() {
           {/* Mission Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
-            <img src= "/placeholder.svg"/>
+            <img src= "/quality education.jpg"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Quality Education</h3>
                 <p className="text-egg-nog">
