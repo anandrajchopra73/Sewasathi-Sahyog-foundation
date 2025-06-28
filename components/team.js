@@ -5,19 +5,21 @@ export default function Team() {
       name: "Aditi Chauhan",
       role: "Board of Trustees",
       category: "trustee",
-      image: "/aditi.jpg"
+      image: "/aditi.jpg",
       bio: "'Compassion is the bridge that connects us all.'Aditi Chauhan, the founder of Helping Hand Foundation, has embarked on a journey driven by purpose and compassion. With a passion for creating positive impact, she leverages her skills and experience to amplify meaningful causes. Starting with small gestures, Her's vision has grown into a larger mission, dedicated to providing essential support to those in hands. With extensive experience working with NGOs and communities, she has learned the value of ground-level impact and the power of collective efforts. Under her leadership, Helping Hand Foundation focuses on education, food, healthcare, and support for marginalized communities.'Empowering others is the greatest legacy we can leave behindd'.Through Helping Hand Foundation, aims to inspire a ripple effect of kindness and generosity, empowering individuals and communities to thrive. With every step forward, she remains committed to the foundation's core values of empathy, compassion, and service.",
     },
     {
       name: "Vaibhav Thakur",
       role: "Board of Trustees",
       category: "trustee",
+      image: "/aditi.jpg",
       bio: "Vaibhav Thakur, the founder of Helping Hand Foundation, comes from a family with a strong background in construction and finance, with their own loan business running for the past 6 years. However, Vaibhav chose a different path—one rooted in creativity and purpose. Starting as a freelancer, he went on to establish his own creative agency, using design to amplify meaningful causes. His passion for helping others turned small gestures—like birthday donations—into a larger mission.With 3+ years of experience working with NGOs across India, he learned the value of ground-level impact and real stories. Under his leadership, Helping Hand Foundation is working towards education, food, healthcare, and essential support for those in need.The journey continues, but the vision remains clear: to reach more people, bring hope, and create lasting change. “Helping Hand is not just a foundation—it’s a promise.” – Vaibhav Thakur",
     },
     {
       name: "Manipal Thakur",
       role: "Board of Trustees",
       category: "trustee",
+      image: "/aditi.jpg",
       bio: "Academic leader and researcher specializing in community development and sustainable education programs for underserved populations.",
     },
     // Board of Directors
