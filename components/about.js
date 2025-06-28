@@ -61,20 +61,19 @@ export default function About() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-2xl font-semibold text-white mb-6">Our Values</h3>
+              <h3 className="text-2xl font-semibold text-white mb-6">Our Vision</h3>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-semibold text-white">Compassion</h4>
-                    <p className="text-egg-nog text-sm">Putting the needs of others before our own</p>
+                    <p className="text-egg-nog text-sm">Equal access to education for every individual.</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-semibold text-white">Unity</h4>
-                    <p className="text-egg-nog text-sm">Working together to achieve common goals</p>
+                    <p className="text-egg-nog text-sm">Universal access to healthcare, menstrual hygiene, and nutritious food.</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
