@@ -66,7 +66,7 @@ export default function About() {
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <p className="text-egg-nog text-sm">Equal access to education for every individual.</p>
+                    <h4 className="text-egg-nog text-sm font-semibold">Equal access to education for every individual.</h4>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
