@@ -14,23 +14,23 @@ export default function Projects() {
     },
     {
       title: "आशा की किरण",
-      description: "Teaching essential computer skills to children and adults in underserved communities.",
-      status: "Expanding",
+      description: "Under this, sharing time and affection with individuals in old age homes, orphanages, and special homes, making a positive impact on their lives.",
+      status: "Ongoing",
     },
     {
-      title: "आशा की किरण",
-      description: "Teaching essential computer skills to children and adults in underserved communities.",
-      status: "Expanding",
+      title: "आहार सेवा",
+      description: "Providing nourishment and hope through meals and sustainable food solutions, making hunger a thing of the past.",
+      status: "Ongoing",
     },
     {
-      title: "आशा की किरण",
-      description: "Teaching essential computer skills to children and adults in underserved communities.",
-      status: "Expanding",
+      title: "सौंदर्य",
+      description: "Nourishing the planet through green initiatives, plantation drives, and cleanliness efforts, creating a better environment for all.",
+      status: "Ongoing",
     },
     {
-      title: "आशा की किरण",
-      description: "Teaching essential computer skills to children and adults in underserved communities.",
-      status: "Expanding",
+      title: "जीवद्रक्षा",
+      description: "Dedicated to protecting and caring for animals, advocating for their welfare and rights.",
+      status: "Ongoing",
     },
   ]
 
