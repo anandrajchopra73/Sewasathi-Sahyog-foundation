@@ -15,7 +15,7 @@ export default function Events() {
       time: "9:00 AM - 5:00 PM",
       description:
         "Join us for our flagship event bringing together educators, policymakers, and community leaders to discuss the future of education.",
-      image: "/canva.jpg?height=half&width=full",
+      image: "/canva (1).jpg?height=half&width=full",
     },
     {
       date: "April 2, 2024",
