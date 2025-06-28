@@ -1,3 +1,21 @@
+import React, { useState } from 'react';
+
+function ReadMore({ text, maxLength = 200 }) {
+  const [expanded, setExpanded] = useState(false);
+  if (text.length <= maxLength) return <span>{text}</span>;
+
+  return (
+    <span>
+      {expanded ? text : `${text.substring(0, maxLength)}...`}
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="ml-2 text-mustard underline"
+      >
+        {expanded ? 'Read Less' : 'Read More'}
+      </button>
+    </span>
+  );
+}
 export default function Team() {
   const teamMembers = [
     // Board of Trustees
@@ -36,26 +54,6 @@ export default function Team() {
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
     },
   ]
-function ReadMore({ text, maxLength = 250 }) {
-  const [expanded, setExpanded] = React.useState(false);
-  const isLong = text.length > maxLength;
-
-  const toggle = () => setExpanded((prev) => !prev);
-
-  return (
-    <p className="text-egg-nog/80">
-      {expanded || !isLong ? text : text.substring(0, maxLength) + "..."}
-      {isLong && (
-        <span
-          onClick={toggle}
-          className="text-mustard ml-2 cursor-pointer font-medium"
-        >
-          {expanded ? "Read Less" : "Read More"}
-        </span>
-      )}
-    </p>
-  );
-}
 
   return (
     <section id="team" className="py-20 bg-white/10 backdrop-blur-sm">
@@ -91,7 +89,9 @@ function ReadMore({ text, maxLength = 250 }) {
                     <div className="p-6">
                       <h4 className="text-xl font-semibold text-white mb-2">{member.name}</h4>
                       <p className="text-egg-nog font-medium mb-3">{member.role}</p>
-                      <ReadMore text={member.bio} />
+                      <p className="text-egg-nog/80">
+                        <ReadMore text={member.bio} />
+                      </p>
                     </div>
                   </div>
                 ))}
