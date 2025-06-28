@@ -80,7 +80,7 @@ export default function Departments() {
     {
       name: "Operations & Logistics",
       icon: <FileText size={48} className="text-egg-nog" />,
-      head: "Dr. Ahmed Hassan",
+      head: "Khushi Joshi",
       description:
         "Conducting research to improve our programs and develop innovative solutions for community challenges.",
       responsibilities: [
