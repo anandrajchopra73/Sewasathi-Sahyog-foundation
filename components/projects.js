@@ -1,19 +1,34 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Mobile Learning Labs",
+      title: "उड़ान",
       description:
-        "Bringing education directly to remote communities through mobile classrooms equipped with modern technology.",
+        "Building a foundation for success through education and skill development, empowering individuals for a brighter future.",
       status: "Active",
     },
     {
-      title: "Teacher Training Program",
+      title: "आरोग्य",
       description:
         "Empowering local educators with modern teaching methods and resources to improve learning outcomes.",
       status: "Ongoing",
     },
     {
-      title: "Digital Literacy Initiative",
+      title: "आशा की किरण",
+      description: "Teaching essential computer skills to children and adults in underserved communities.",
+      status: "Expanding",
+    },
+    {
+      title: "आशा की किरण",
+      description: "Teaching essential computer skills to children and adults in underserved communities.",
+      status: "Expanding",
+    },
+    {
+      title: "आशा की किरण",
+      description: "Teaching essential computer skills to children and adults in underserved communities.",
+      status: "Expanding",
+    },
+    {
+      title: "आशा की किरण",
       description: "Teaching essential computer skills to children and adults in underserved communities.",
       status: "Expanding",
     },
