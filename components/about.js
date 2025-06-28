@@ -110,7 +110,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20">
               <div className="h-48 bg-gradient-to-br from-egg-nog/30 to-mustard/30">
-              image: "/placeholder.svg?height=800&width=1200"
+              <img src= "/placeholder.svg"/>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Quality Education</h3>
