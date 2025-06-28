@@ -146,16 +146,6 @@ export default function Departments() {
                 </div>
                 {/* Contact Information */}
                 <div className="pt-4 border-t border-white/20">
-                  <div className="text-sm text-egg-nog/80">
-                    <strong className="text-white">Contact:</strong>
-                    <br />
-                    <a
-                      href={`mailto:${dept.contact}`}
-                      className="text-egg-nog hover:text-white transition-colors duration-200 underline"
-                    >
-                      {dept.contact}
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
