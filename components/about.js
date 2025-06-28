@@ -66,25 +66,25 @@ export default function About() {
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="text-egg-nog text-sm font-semibold">Equal access to education for every individual.</h4>
+                    <h4 className="text-egg-nog text-lg font-semibold">Equal access to education for every individual.</h4>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="text-egg-nog text-sm">Universal access to healthcare, menstrual hygiene, and nutritious food.</h4>
+                    <h4 className="text-egg-nog text-lg font-semibold">Universal access to healthcare, menstrual hygiene, and nutritious food.</h4>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="text-egg-nog text-sm">Promotion of overall well-being as a fundamental right.</h4>
+                    <h4 className="text-egg-nog text-lg font-semibold">Promotion of overall well-being as a fundamental right.</h4>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="text-egg-nog text-lg">A future where no one is held back by basic needs and everyone thrives with dignity and purpose.</h4>
+                    <h4 className="text-egg-nog text-lg font-semibold">A future where no one is held back by basic needs and everyone thrives with dignity and purpose.</h4>
                   </div>
                 </li>
               </ul>
