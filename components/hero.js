@@ -16,7 +16,7 @@ export default function Hero() {
         "Witness our volunteers in action as we bring education and healthcare directly to the communities that need it most.",
     },
     {
-      image: "/images/foundation-activities-collage.png",
+      image: "bg slide.jpg",
       title: "HELPING HAND FOUNDATION",
       subtitle: "Together We Can, Together We Will",
       description:
