@@ -10,6 +10,7 @@ export default function Feedback() {
   const feedbackItems = [
     {
       name: "Lakshita Sharma",
+      role: "volunteer"
       location: "Rural Community School",
       rating: 5,
       feedback:
@@ -19,6 +20,7 @@ export default function Feedback() {
     },
     {
       name: "Jaanvi",
+      role: "volunteer",
       location: "Community Education Center",
       rating: 5,
       feedback:
@@ -27,6 +29,7 @@ export default function Feedback() {
     },
     {
       name: "Khushi Vats",
+      role: "volunteer",
       location: "Regional Health Clinic",
       rating: 5,
       feedback:
@@ -35,6 +38,7 @@ export default function Feedback() {
     },
     {
       name: "Mehar",
+      role: "volunteer",
       location: "Digital Literacy Program",
       rating: 5,
       feedback:
@@ -43,6 +47,7 @@ export default function Feedback() {
     },
     {
       name: "Dhriti",
+      role: "volunteer",
       location: "Education Outreach",
       rating: 5,
       feedback:
@@ -51,6 +56,7 @@ export default function Feedback() {
     },
     {
       name: "Kaavya",
+      role: "volunteer",
       location: "Village Development Committee",
       rating: 5,
       feedback:
