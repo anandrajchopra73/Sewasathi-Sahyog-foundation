@@ -10,7 +10,7 @@ export default function Departments() {
     {
       name: "Human Resources & Management Department",
       icon: <GraduationCap size={48} className="text-egg-nog" />,
-      head: "Dr. Sarah Johnson",
+      head: "Shaurya Mittal",
       description: "Leading educational initiatives and programs to ensure quality learning opportunities for all.",
       responsibilities: [
         "Curriculum development and implementation",
@@ -24,7 +24,7 @@ export default function Departments() {
     {
       name: "Public Relations & Outreach",
       icon: <Heart size={48} className="text-egg-nog" />,
-      head: "Dr. Priya Patel",
+      head: "Gunjan Tomar",
       description: "Providing comprehensive healthcare services and promoting community health and wellness.",
       responsibilities: [
         "Primary healthcare service delivery",
@@ -38,7 +38,7 @@ export default function Departments() {
     {
       name: "Research & Planning",
       icon: <Users size={48} className="text-egg-nog" />,
-      head: "Michael Chen",
+      head: "Stephy Omana",
       description: "Building strong community partnerships and ensuring our programs reach those who need them most.",
       responsibilities: [
         "Community needs assessment",
@@ -52,7 +52,7 @@ export default function Departments() {
     {
       name: "Social Media & Content",
       icon: <DollarSign size={48} className="text-egg-nog" />,
-      head: "James Wilson",
+      head: "Sukrati Nagar",
       description: "Ensuring transparent financial management and efficient organizational operations.",
       responsibilities: [
         "Financial planning and budgeting",
@@ -66,7 +66,7 @@ export default function Departments() {
     {
       name: "Finance & Budgeting",
       icon: <Megaphone size={48} className="text-egg-nog" />,
-      head: "Emily Rodriguez",
+      head: "Aditi Chauhan",
       description: "Sharing our story, raising awareness, and building support for our mission.",
       responsibilities: [
         "Brand management and communications",
