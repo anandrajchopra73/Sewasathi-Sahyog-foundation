@@ -34,7 +34,7 @@ export default function Team() {
       name: "Ruchika Agarwal",
       role: "Coc cheif of core",
       category: "director",
-      image: "/ruchika agarwal.jpg?height=100&width=150",
+      image: "/ruchika agarwal.jpg",
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
     },
   ]
@@ -66,7 +66,7 @@ export default function Team() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="h-full w-full object-cover"
+                        className=" object-cover"
                       />
                     </div>
 
