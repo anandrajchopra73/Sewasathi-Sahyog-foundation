@@ -1,13 +1,6 @@
-import { useState } from 'react';
-
 export default function Team() {
-  const [showFullBio, setShowFullBio] = useState({});
-
-  const toggleBio = (index) => {
-    setShowFullBio((prev) => ({ ...prev, [index]: !prev[index] }));
-  };
-
   const teamMembers = [
+    // Board of Trustees
     {
       name: "Aditi Chauhan",
       role: "Board of Trustees",
@@ -29,6 +22,7 @@ export default function Team() {
       image: "/manipal thakur (1).jpg",
       bio: "Academic leader and researcher specializing in community development and sustainable education programs for underserved populations.",
     },
+    // Board of Directors
     {
       name: "Tiya Mittal",
       role: "Board of Directors",
@@ -43,7 +37,7 @@ export default function Team() {
       image: "/ruchika agarwal (1).jpg",
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
     },
-  ];
+  ]
 
   return (
     <section id="team" className="py-20 bg-white/10 backdrop-blur-sm">
@@ -72,26 +66,14 @@ export default function Team() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="h-full w-full object-cover"
+                        className=" h-half w-full object-cover"
                       />
                     </div>
 
                     <div className="p-6">
                       <h4 className="text-xl font-semibold text-white mb-2">{member.name}</h4>
                       <p className="text-egg-nog font-medium mb-3">{member.role}</p>
-                      <p className="text-egg-nog/80">
-                        {showFullBio[index]
-                          ? member.bio
-                          : member.bio.slice(0, 200) + (member.bio.length > 200 ? '...' : '')}
-                        {member.bio.length > 200 && (
-                          <button
-                            onClick={() => toggleBio(index)}
-                            className="text-blue-300 ml-2 underline"
-                          >
-                            {showFullBio[index] ? 'Read Less' : 'Read More'}
-                          </button>
-                        )}
-                      </p>
+                      <p className="text-egg-nog/80">{member.bio}</p>
                     </div>
                   </div>
                 ))}
@@ -113,7 +95,7 @@ export default function Team() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="h-full w-full object-cover"
+                        className="h-half w-full object-cover"
                       />
                     </div>
                     <div className="p-6">
@@ -128,5 +110,5 @@ export default function Team() {
         </div>
       </div>
     </section>
-  );
+  )
 }
