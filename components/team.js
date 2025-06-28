@@ -19,7 +19,7 @@ export default function Team() {
       name: "Manikant Thakur",
       role: "Board of Trustees",
       category: "trustee",
-      image: "/manipal thakur.jpg?height=200&width=150",
+      image: "/manipal thakur.jpg?height=100&width=150",
       bio: "Academic leader and researcher specializing in community development and sustainable education programs for underserved populations.",
     },
     // Board of Directors
