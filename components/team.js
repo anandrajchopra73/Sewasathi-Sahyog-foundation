@@ -1,22 +1,3 @@
-import React, { useState } from 'react';
-
-function ReadMore({ text, maxLength = 200 }) {
-  const [expanded, setExpanded] = useState(false);
-  if (text.length <= maxLength) return <span>{text}</span>;
-
-  return (
-    <span>
-      {expanded ? text : `${text.substring(0, maxLength)}...`}
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="ml-2 text-mustard underline"
-      >
-        {expanded ? 'Read Less' : 'Read More'}
-      </button>
-    </span>
-  );
-}
-
 export default function Team() {
   const teamMembers = [
     // Board of Trustees
@@ -43,15 +24,15 @@ export default function Team() {
     },
     // Board of Directors
     {
-      name: "Khushi Joshi",
+      name: "James Wilson",
       role: "Board of Directors",
       category: "director",
       image: "/aditi.jpg",
       bio: "Experienced nonprofit executive with expertise in strategic planning, fundraising, and organizational development.",
     },
     {
-      name: "Ruchika Agarwal",
-      role: "Coc cheif of core",
+      name: "Dr. Priya Patel",
+      role: "Board of Directors",
       category: "director",
       image: "/aditi.jpg",
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
@@ -92,9 +73,7 @@ export default function Team() {
                     <div className="p-6">
                       <h4 className="text-xl font-semibold text-white mb-2">{member.name}</h4>
                       <p className="text-egg-nog font-medium mb-3">{member.role}</p>
-                      <p className="text-egg-nog/80">
-                        <ReadMore text={member.bio} />
-                      </p>
+                      <p className="text-egg-nog/80">{member.bio}</p>
                     </div>
                   </div>
                 ))}
@@ -113,12 +92,12 @@ export default function Team() {
                     className="bg-white/20 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-white/20"
                   >
                     <div className="h-48 w-full overflow-hidden">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
                     <div className="p-6">
                       <h4 className="text-xl font-semibold text-white mb-2">{member.name}</h4>
                       <p className="text-egg-nog font-medium mb-3">{member.role}</p>
