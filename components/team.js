@@ -34,7 +34,7 @@ export default function Team() {
       name: "Ruchika Agarwal",
       role: "Coc cheif of core",
       category: "director",
-      image: "/ruchika agarwal.jpg",
+      image: "/ruchika agarwal.jpg?height=100&width=150",
       bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
     },
   ]
