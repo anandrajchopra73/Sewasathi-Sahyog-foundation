@@ -53,7 +53,7 @@ export default function Team() {
         <div className="space-y-16">
           {/* Board of Trustees */}
           <div>
-            <h3 className="text-2xl font-semibold text-center text-egg-nog mb-8">Board of Trustees</h3>
+            <h3 className="text-3xl font-semibold text-center text-egg-nog mb-8">Board of Trustees</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {teamMembers
                 .filter((member) => member.category === "trustee")
@@ -82,7 +82,7 @@ export default function Team() {
 
           {/* Board of Directors */}
           <div>
-            <h3 className="text-2xl font-semibold text-center text-egg-nog mb-8"> Board Members</h3>
+            <h3 className="text-3xl font-semibold text-center text-egg-nog mb-8"> Board Members</h3>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {teamMembers
                 .filter((member) => member.category === "director")
