@@ -211,7 +211,7 @@ export default function Feedback() {
                   "_blank",
                 )
               }
-              className="bg-white/30 hover:bg-white/40 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 border border-white/40"
+              className="bg-white/30 hover:bg-white/40 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 border border-white/40"
             >
                सहारा बनो
             </button>
