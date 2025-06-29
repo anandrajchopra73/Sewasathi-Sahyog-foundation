@@ -43,7 +43,7 @@ export default function Header() {
           <div className="flex items-center space-x-4 cursor-pointer group" onClick={handleLogoClick}>
             <div className="flex-shrink-0">
               <Image
-                src="/images/transparent-helping-hand-logo.png"
+                src="/logo_for_helping_hand-removebg-preview.png"
                 alt="HELPING HAND FOUNDATION"
                 width={120}
                 height={120}
