@@ -129,7 +129,7 @@ export default function Departments() {
 
                 {/* Key Responsibilities */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-white mb-3">Key Responsibilities</h4>
+                  <h4 className="text-lg font-semibold text-white mb-3">description</h4>
                   <ul className="space-y-2">
                     {dept.responsibilities.slice(0, 3).map((responsibility, idx) => (
                       <li key={idx} className="flex items-start space-x-2">

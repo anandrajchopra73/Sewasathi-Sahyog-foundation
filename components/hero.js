@@ -125,7 +125,7 @@ export default function Hero() {
 
         {/* Call to Action */}
         <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8 md:p-12 max-w-2xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-semibold text-copper mb-6">Take action to help us grow</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold text-copper mb-6">Take action to help society grow</h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={handleDonateClick}

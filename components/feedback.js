@@ -100,7 +100,7 @@ export default function Feedback() {
     <section id="feedback" className="py-20 bg-white/10 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Word From our सहारा</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Word From our "सहारा"</h2>
           <p className="text-lg text-egg-nog max-w-3xl mx-auto">
             Hear from the people whose lives have been touched by HELPING HAND FOUNDATION. These testimonials reflect
             the real impact of our work in communities around the world.
@@ -197,7 +197,7 @@ export default function Feedback() {
         {/* Call to Action */}
         <div className="text-center">
           <div className="bg-white/20 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-            <h3 className="text-2xl font-semibold text-white mb-4">Join us</h3>
+            <h3 className="text-2xl font-semibold text-white mb-4">Join Us</h3>
             <p className="text-egg-nog mb-6 max-w-2xl mx-auto">
                   Our mission is centered around addressing critical social issues and contributing to the betterment of communities. We are committed to empowering individuals, particularly those who are underserved or vulnerable, by providing vital support and resources to help improve their quality of life.
                   We appreciate your interest in volunteering with us.
@@ -209,9 +209,9 @@ export default function Feedback() {
                   "_blank",
                 )
               }
-              className="bg-white/30 hover:bg-white/40 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 border border-white/40"
+              className="bg-white/30 hover:bg-white/40 text-white font-bold py-3 px-8 rounded-2Xl transition-colors duration-200 border border-white/40"
             >
-               सहारा बनो
+               "सहारा बनो"
             </button>
           </div>
         </div>

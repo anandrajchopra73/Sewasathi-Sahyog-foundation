@@ -3,21 +3,21 @@ export default function Team() {
     // Board of Trustees
     {
       name: "Aditi Chauhan",
-      role: "Board of Trustees",
+      role: "Board of Trustee",
       category: "trustee",
       image: "/aditi (1).jpg",
       bio: "Aditi Chauhan, the founder of Helping Hand Foundation, has embarked on a journey driven by purpose and compassion. With a passion for creating positive impact, she leverages her skills and experience to amplify meaningful causes. Starting with small gestures, Her's vision has grown into a larger mission, dedicated to providing essential support to those in hands. With extensive experience working with NGOs and communities, she has learned the value of ground-level impact and the power of collective efforts. Under her leadership, Helping Hand Foundation focuses on education, food, healthcare, and support for marginalized communities.'Empowering others is the greatest legacy we can leave behindd'.Through Helping Hand Foundation, aims to inspire a ripple effect of kindness and generosity, empowering individuals and communities to thrive. With every step forward, she remains committed to the foundation's core values of empathy, compassion, and service. 'Compassion is the bridge that connects us all.'-Aditi Chauhan",
     },
     {
       name: "Vaibhav Thakur",
-      role: "Board of Trustees",
+      role: "Board of Trustee",
       category: "trustee",
       image: "/vaibhav (1).jpg",
       bio: "Vaibhav Thakur, the founder of Helping Hand Foundation, comes from a family with a strong background in construction and finance, with their own loan business running for the past 6 years. However, Vaibhav chose a different path—one rooted in creativity and purpose. Starting as a freelancer, he went on to establish his own creative agency, using design to amplify meaningful causes. His passion for helping others turned small gestures—like birthday donations—into a larger mission.With 3+ years of experience working with NGOs across India, he learned the value of ground-level impact and real stories. Under his leadership, Helping Hand Foundation is working towards education, food, healthcare, and essential support for those in need.The journey continues, but the vision remains clear: to reach more people, bring hope, and create lasting change. “Helping Hand is not just a foundation—it’s a promise.” – Vaibhav Thakur",
     },
     {
       name: "Manikant Thakur",
-      role: "Board of Trustees",
+      role: "Board of Trustee",
       category: "trustee",
       image: "/manipal thakur (1).jpg",
       bio: "'Empowering innovation is the key to a brighter future'Manikant Kumar, the founder of Helping Hand Foundation, hails from a family with a strong entrepreneurial background, having their own successful business. However, Manikant chose a different path—one rooted in compassion and service Driven by a passion to help those in need, he founded Helping Hand Foundation,transforming his desire to make a difference into a larger mission. Under his leadership, the foundation is dedicated to providing essential support to the underprivileged, focusing on initiatives that bring hope and create lasting change.Helping Hand Foundation is not just an organization—it's a commitment to serve humanity. – Manikant Kumar.With a clear vision to reach more people and make a meaningful impact, Manikant continues to lead the foundation towards a brighter future for those in need.",
@@ -25,17 +25,17 @@ export default function Team() {
     // Board of Directors
     {
       name: "Tiya Mittal",
-      role: "Board of director",
+      role: "Board of Director",
       category: "director",
       image: "/tiya mittle (1).jpg",
-      bio: "Every action, no matter how small, contributes to the larger tapestry of change we are weaving together. Let us continue to be inspired by the individuals we serve.",
+      bio: "'Every action, no matter how small, contributes to the larger tapestry of change we are weaving together. Let us continue to be inspired by the individuals we serve.'",
     },
     {
       name: "Ruchika Agarwal",
       role: "Cheif of Core (COC)",
       category: "director",
       image: "/ruchika agarwal (1).jpg",
-      bio: "We are not just partners; we are co-creators of a better world, each playing a vital role in this journey.",
+      bio: "'We are not just partners; we are co-creators of a better world, each playing a vital role in this journey.'",
     },
   ]
 

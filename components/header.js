@@ -12,7 +12,7 @@ export default function Header() {
     { name: "Projects", href: "#projects" },
     { name: "Leads", href: "#team" },
     { name: "Departments", href: "#departments" },
-    { name: "Word From our सहारा", href: "#feedback" },
+    { name: "Word From our 'सहारा'", href: "#feedback" },
     { name: "Join Us", href: "#join" },
   ]
 
