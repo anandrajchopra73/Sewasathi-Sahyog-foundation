@@ -23,7 +23,7 @@ export default function Hero() {
         "Join us in our mission to create lasting change through education, healthcare, and community support.",
     },
     {
-      image: "/bg 4.jpg?height=800&width=1200",
+      image: "/bg4.jpg?height=800&width=1200",
       title: "HELPING HAND FOUNDATION",
       subtitle: "Building Bridges to Better Futures",
       description:
