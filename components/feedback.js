@@ -11,56 +11,56 @@ export default function Feedback() {
     {
       name: "Lakshita Sharma",
       role: "Volunteer",
-      location: "Rural Community School",
+      location: "",
       rating: 5,
       feedback:
         "HELPING HAND FOUNDATION transformed my daughter's education. The mobile learning lab brought computers and internet to our remote village for the first time. Now she dreams of becoming a software engineer!Being part of the NGOs social media team has been incredibly fulfilling .Sharing real stories emotions and the impact of our work online feels powerful- but nothing compares to witnessing it in person. Joining the recent drive and seeing the smiles first hand reminded me the why we do what we do.  It's more than posters and reels- it's real lives, real change.",
-      date: "March 2024",
+      date: "",
     },
     {
       name: "Jaanvi",
       role: "Volunteer",
-      location: "Community Education Center",
+      location: "",
       rating: 5,
       feedback:
         "I'm delighted to be a part of this revolutionary space. My fellows here are truly passionate about bringing about a change. From amicable people to various opportunities, the Helping Hand Foundation Helps in fostering a healthy environment not only for the ones in need but for us as human beings too. I feel like not only an aid to the society but a friend to those who have suffered for great causes.",
-      date: "February 2024",
+      date: "",
     },
     {
       name: "Khushi Vats",
       role: "Volunteer",
-      location: "Regional Health Clinic",
+      location: "",
       rating: 5,
       feedback:
         "I just joined Helping Hand Life yesterday. I already feel welcomed and inspired. Even in this short time, I can sense the positive energy and dedication of everyone involved. I’m really excited to be part of a team that is making a real difference. I look forward to learning, growing, and contributing in any way I can!",
-      date: "January 2024",
+      date: "",
     },
     {
       name: "Mehar",
       role: "Volunteer",
-      location: "Digital Literacy Program",
+      location: "",
       rating: 5,
       feedback:
         "Being a part of Helping Hand Foundation has been such a great experience. Everyone here is super kind, helpful, and always ready to support each other. The work environment is really positive and focused, which makes it fun to be involved. I also got to attend one of their offline drives, it was honestly such an overwhelming moment. It just feels really nice to be doing something meaningful for society with such an amazing team.",
-      date: "March 2024",
+      date: "",
     },
     {
       name: "Dhriti",
       role: "Volunteer",
-      location: "Education Outreach",
+      location: "",
       rating: 5,
       feedback:
         "Working with Helping Hand Foundation NGO has been a truly an enriching experience. It gave me the opportunity to contribute meaningfully to society while learning the value of compassion, teamwork, and responsibility. I gained hands-on experience in recruitment, onboarding, volunteer coordination, and internal communication. I got to interact with passionate volunteers, support team members, and help build a positive, welcoming environment. I learned a lot about communication, organizing stuff, and handling situations calmly. The friendly team made it easy to grow and learn. I’m really grateful for everything I learned and the memories I am creating as well as created while being part of this journey.",
-      date: "February 2024",
+      date: "",
     },
     {
       name: "Kaavya",
-      role: "Community Leader",
-      location: "Village Development Committee",
+      role: "Volunteer",
+      location: "",
       rating: 5,
       feedback:
         "Working with Helping Hand Life has been an incredible experience. It’s not just about volunteering, it’s about joining a community that genuinely cares. Every project we work on brings joy to others and helps us grow as individuals. I’ve learned the value of teamwork, empathy, and taking action. I’m so grateful to be part of such a meaningful journey.",
-      date: "January 2024",
+      date: "",
     },
   ]
 
