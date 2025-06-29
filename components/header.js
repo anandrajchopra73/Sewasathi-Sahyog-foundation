@@ -45,8 +45,8 @@ export default function Header() {
               <Image
                 src="/logo_for_helping_hand-removebg-preview.png"
                 alt="HELPING HAND FOUNDATION"
-                width={120}
-                height={120}
+                width={140}
+                height={140}
                 className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain group-hover:scale-105 transition-transform duration-200"
                 priority
               />

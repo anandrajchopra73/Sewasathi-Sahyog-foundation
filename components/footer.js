@@ -33,8 +33,8 @@ export default function Footer() {
               <Image
                 src="/logo_for_helping_hand-removebg-preview.png"
                 alt="HELPING HAND FOUNDATION"
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 className="w-16 h-16 object-contain"
               />
               <div>
