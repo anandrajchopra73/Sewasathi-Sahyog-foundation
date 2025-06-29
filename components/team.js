@@ -25,7 +25,7 @@ export default function Team() {
     // Board of Directors
     {
       name: "Tiya Mittal",
-      role: "Board Members",
+      role: "Board of director",
       category: "director",
       image: "/tiya mittle (1).jpg",
       bio: "Every action, no matter how small, contributes to the larger tapestry of change we are weaving together. Let us continue to be inspired by the individuals we serve.",
