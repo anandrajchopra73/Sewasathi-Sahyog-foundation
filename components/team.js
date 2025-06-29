@@ -25,17 +25,17 @@ export default function Team() {
     // Board of Directors
     {
       name: "Tiya Mittal",
-      role: "Board of Directors",
+      role: "Board Members",
       category: "director",
       image: "/tiya mittle (1).jpg",
-      bio: "Experienced nonprofit executive with expertise in strategic planning, fundraising, and organizational development.",
+      bio: "Every action, no matter how small, contributes to the larger tapestry of change we are weaving together. Let us continue to be inspired by the individuals we serve.",
     },
     {
       name: "Ruchika Agarwal",
-      role: "Coc cheif of core",
+      role: "Cheif of Core (COC)",
       category: "director",
       image: "/ruchika agarwal (1).jpg",
-      bio: "Healthcare professional and community advocate focused on integrating health and education services for vulnerable communities.",
+      bio: "We are not just partners; we are co-creators of a better world, each playing a vital role in this journey.",
     },
   ]
 
@@ -82,7 +82,7 @@ export default function Team() {
 
           {/* Board of Directors */}
           <div>
-            <h3 className="text-2xl font-semibold text-center text-egg-nog mb-8">Board of Directors</h3>
+            <h3 className="text-2xl font-semibold text-center text-egg-nog mb-8"> Board Members</h3>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {teamMembers
                 .filter((member) => member.category === "director")
