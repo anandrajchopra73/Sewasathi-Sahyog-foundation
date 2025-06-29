@@ -18,12 +18,12 @@ export default function Events() {
       image: "/canva.jpg",
     },
     {
-      date: "April 20, 2024",
-      title: "Fundraising Gala",
-      location: "Grand Hotel",
-      time: "7:00 PM - 11:00 PM",
+      date: "revealed soon",
+      title: "google workspace workshop",
+      location: "Online",
+      time: "revealed soon",
       description:
-        "An elegant evening of dining, entertainment, and fundraising to support our educational initiatives.",
+        "revealed soon.",
       image: "/placeholder.svg?height=300&width=400",
     },
     {
