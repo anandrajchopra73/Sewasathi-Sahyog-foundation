@@ -125,7 +125,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#feedback" className="text-gray-300 hover:text-copper transition-colors">
-                  Feedback
+                  Word From our "सहारा"
                 </a>
               </li>
             </ul>
