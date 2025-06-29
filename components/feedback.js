@@ -201,8 +201,8 @@ export default function Feedback() {
           <div className="bg-white/20 backdrop-blur-sm rounded-lg p-8 border border-white/20">
             <h3 className="text-2xl font-semibold text-white mb-4">Join us</h3>
             <p className="text-egg-nog mb-6 max-w-2xl mx-auto">
-                  HELPING HAND FOUNDATION
-              "Together we can, Together we will"
+                  Our mission is centered around addressing critical social issues and contributing to the betterment of communities. We are committed to empowering individuals, particularly those who are underserved or vulnerable, by providing vital support and resources to help improve their quality of life.
+                  We appreciate your interest in volunteering with us.
             </p>
             <button
               onClick={() =>
