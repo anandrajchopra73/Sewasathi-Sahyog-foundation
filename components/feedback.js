@@ -117,9 +117,7 @@ export default function Feedback() {
                 <div key={index} className="w-full flex-shrink-0">
                   <div className="p-8 md:p-12">
                     {/* Quote Icon */}
-                    <div className="text-center mb-8">
-                      <Quote className="mx-auto text-egg-nog/40" size={48} />
-                    </div>
+                   
 
                     {/* Main Feedback Content */}
                     <div className="max-w-4xl mx-auto text-center">
