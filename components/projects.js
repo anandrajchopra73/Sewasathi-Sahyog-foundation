@@ -9,7 +9,7 @@ export default function Projects() {
     {
       title: "आरोग्य",
       description:
-        "Empowering local educators with modern teaching methods and resources to improve learning outcomes.",
+        "Fostering holistic well-being by promoting menstrual health and hygiene, and ensuring accessible healthcare for all.",
       status: "Ongoing",
     },
     {
