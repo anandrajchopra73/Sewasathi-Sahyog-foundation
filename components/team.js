@@ -20,7 +20,11 @@ export default function Team() {
       role: "Board of Trustees",
       category: "trustee",
       image: "/manipal thakur (1).jpg",
-      bio: "Academic leader and researcher specializing in community development and sustainable education programs for underserved populations.",
+      bio: "'Empowering innovation is the key to a brighter future'"
+            "Manikant Kumar, the founder of Helping Hand Foundation, hails from a family with a strong entrepreneurial background, having their own successful business. However, Manikant chose a different path—one rooted in compassion and service"                
+            "Driven by a passion to help those in need, he founded Helping Hand Foundation,transforming his desire to make a difference into a larger mission. Under his leadership, the foundation is dedicated to providing essential support to the underprivileged, focusing on initiatives that bring hope and create lasting change."
+            "Helping Hand Foundation is not just an organization—it's a commitment to serve humanity. – Manikant Kumar."
+            "With a clear vision to reach more people and make a meaningful impact, Manikant continues to lead the foundation towards a brighter future for those in need.",
     },
     // Board of Directors
     {
