@@ -123,29 +123,28 @@ export default function Departments() {
               <div className="p-6">
                 <p className="text-egg-nog mb-6 leading-relaxed">{dept.description}</p>
 
-                {/* Key Responsibilities */}
-                <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-white mb-3">description</h4>
-                  <ul className="space-y-2">
-                    {dept.responsibilities.slice(0, 3).map((responsibility, idx) => (
-                      <li key={idx} className="flex items-start space-x-2">
-                        <div className="w-2 h-2 bg-egg-nog rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-egg-nog text-sm">{responsibility}</span>
-                      </li>
-                    ))}
-                    {dept.responsibilities.length > 3 && (
-                      <li className="text-egg-nog/60 text-sm italic">
-                        +{dept.responsibilities.length - 3} more responsibilities
-                      </li>
-                    )}
-                  </ul>
-                </div>
+                
                 {/* Contact Information */}
                 <div className="pt-4 border-t border-white/20">
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Read More / Show Less Button */}
+        <div className="text-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="bg-white/30 hover:bg-white/40 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 border border-white/40 inline-flex items-center space-x-2 group"
+          >
+            <span>{showAll ? "Show Less Departments" : "Read More Departments"}</span>
+            {showAll ? (
+              <ChevronUp size={20} className="group-hover:-translate-y-1 transition-transform duration-200" />
+            ) : (
+              <ChevronDown size={20} className="group-hover:translate-y-1 transition-transform duration-200" />
+            )}
+          </button>
         </div>
       </div>
     </section>
