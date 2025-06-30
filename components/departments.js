@@ -13,11 +13,7 @@ export default function Departments() {
       head: "Shaurya Mittal",
       description: "Leading educational initiatives and programs to ensure quality learning opportunities for all.",
       responsibilities: [
-        "Curriculum development and implementation",
-        "Teacher training and capacity building",
-        "Educational resource distribution",
-        "Learning outcome assessment",
-        "Digital literacy programs",
+        "",
       ],
       contact: "education@helpinghandfoundation.org",
     },
