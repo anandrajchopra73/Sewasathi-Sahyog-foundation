@@ -8,7 +8,7 @@ export default function Departments() {
 
   const departments = [
     {
-      name: "Human Resources & Management Department",
+      name: "Human Resources & Management",
       icon: <GraduationCap size={48} className="text-egg-nog" />,
       head: "Shaurya Mittal",
       description: "Nurturing potential and building a positive, purpose-driven work environment",

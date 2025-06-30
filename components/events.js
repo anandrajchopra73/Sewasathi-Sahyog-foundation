@@ -19,27 +19,11 @@ export default function Events() {
     },
     {
       date: "revealed soon",
-      title: "google workspace workshop",
+      title: "Google Workspace Workshop",
       location: "Online",
       time: "revealed soon",
       description:
         "revealed soon.",
-      image: "/placeholder.svg?height=300&width=400",
-    },
-    {
-      date: "May 10, 2024",
-      title: "Community Health Fair",
-      location: "Central Park",
-      time: "10:00 AM - 4:00 PM",
-      description: "Free health screenings, educational workshops, and wellness activities for the entire family.",
-      image: "/placeholder.svg?height=300&width=400",
-    },
-    {
-      date: "June 5, 2024",
-      title: "Digital Literacy Workshop",
-      location: "Tech Center",
-      time: "1:00 PM - 5:00 PM",
-      description: "Hands-on training in essential digital skills for adults and seniors in our community.",
       image: "/placeholder.svg?height=300&width=400",
     },
   ]

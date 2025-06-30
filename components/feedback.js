@@ -211,7 +211,7 @@ export default function Feedback() {
               }
               className="bg-white/30 hover:bg-white/40 text-white font-bold py-3 px-8 rounded-2Xl transition-colors duration-200 border border-white/40"
             >
-               "सहारा बनो"
+               "सहारा" बनो
             </button>
           </div>
         </div>
