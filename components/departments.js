@@ -11,7 +11,7 @@ export default function Departments() {
       name: "Human Resources & Management Department",
       icon: <GraduationCap size={48} className="text-egg-nog" />,
       head: "Shaurya Mittal",
-      description: "Leading educational initiatives and programs to ensure quality learning opportunities for all.",
+      description: "Nurturing potential and building a positive, purpose-driven work environment",
       responsibilities: [
         "",
       ],
@@ -21,7 +21,7 @@ export default function Departments() {
       name: "Public Relations & Outreach",
       icon: <Heart size={48} className="text-egg-nog" />,
       head: "Gunjan Tomar",
-      description: "Providing comprehensive healthcare services and promoting community health and wellness.",
+      description: "🤝 Building bridges between our mission and the community.Spreading awareness, inspiring action.Connecting hearts to causes, voices to change.",
       responsibilities: [
         "Primary healthcare service delivery",
         "Health education and awareness campaigns",
@@ -35,7 +35,7 @@ export default function Departments() {
       name: "Research & Planning",
       icon: <Users size={48} className="text-egg-nog" />,
       head: "Stephy Omana",
-      description: "Building strong community partnerships and ensuring our programs reach those who need them most.",
+      description: "Driving impact with insights, strategy, and purpose.Turning data into direction, and ideas into action.Building every step on research, reflection,and results.",
       responsibilities: [
         "Community needs assessment",
         "Stakeholder engagement and partnerships",
@@ -49,7 +49,7 @@ export default function Departments() {
       name: "Social Media & Content",
       icon: <DollarSign size={48} className="text-egg-nog" />,
       head: "Sukrati Nagar",
-      description: "Ensuring transparent financial management and efficient organizational operations.",
+      description: "Amplifying voices, telling stories that inspire.Creating content that connects, engages, and empowers.Taking our mission to every corner of the digital world.",
       responsibilities: [
         "Financial planning and budgeting",
         "Donor fund management",
@@ -63,7 +63,7 @@ export default function Departments() {
       name: "Finance & Budgeting",
       icon: <Megaphone size={48} className="text-egg-nog" />,
       head: "Aditi Chauhan",
-      description: "Sharing our story, raising awareness, and building support for our mission.",
+      description: "Transparent, smart budgeting for a sustainable future",
       responsibilities: [
         "Brand management and communications",
         "Social media and digital marketing",
@@ -78,7 +78,7 @@ export default function Departments() {
       icon: <FileText size={48} className="text-egg-nog" />,
       head: "Khushi Joshi",
       description:
-        "Conducting research to improve our programs and develop innovative solutions for community challenges.",
+        "Ensuring timely support reaches the right place, at the right time",
       responsibilities: [
         "Program impact assessment",
         "Research and data analysis",
