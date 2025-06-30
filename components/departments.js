@@ -147,21 +147,6 @@ export default function Departments() {
             </div>
           ))}
         </div>
-
-        {/* Read More / Show Less Button */}
-        <div className="text-center">
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="bg-white/30 hover:bg-white/40 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 border border-white/40 inline-flex items-center space-x-2 group"
-          >
-            <span>{showAll ? "Show Less Departments" : "Read More Departments"}</span>
-            {showAll ? (
-              <ChevronUp size={20} className="group-hover:-translate-y-1 transition-transform duration-200" />
-            ) : (
-              <ChevronDown size={20} className="group-hover:translate-y-1 transition-transform duration-200" />
-            )}
-          </button>
-        </div>
       </div>
     </section>
   )
