@@ -143,7 +143,7 @@ export default function Footer() {
                 >
                   <Mail size={20} className="text-mustard" />
                 </a>
-                <span className="text-gray-300">teamhelpinghandfoundation@gmail.com</span>
+                <span className="text-gray-300">sewasathisahyogfoundation@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-mustard" />
