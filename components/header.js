@@ -53,7 +53,7 @@ export default function Header() {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-white leading-tight">
-                HELPING HAND FOUNDATION
+                SEWASATHI SAHYOG FOUNDATION
               </h1>
               <p className="text-xs md:text-sm text-egg-nog font-medium italic leading-tight">
                 "TOGETHER WE CAN, TOGETHER WE WILL"
@@ -84,7 +84,7 @@ export default function Header() {
 
         {/* Mobile Foundation Name - Shows on small screens */}
         <div className="sm:hidden pb-3">
-          <h1 className="text-base font-bold text-white text-center">HELPING HAND FOUNDATION</h1>
+          <h1 className="text-base font-bold text-white text-center">SEWASATHI SAHYOG FOUNDATION</h1>
           <p className="text-xs text-egg-nog font-medium italic text-center">"TOGETHER WE CAN, TOGETHER WE WILL"</p>
         </div>
 

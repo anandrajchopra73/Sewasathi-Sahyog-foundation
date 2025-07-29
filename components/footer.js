@@ -38,12 +38,12 @@ export default function Footer() {
                 className="w-16 h-16 object-contain"
               />
               <div>
-                <h3 className="text-xl font-bold text-mustard">HELPING HAND FOUNDATION</h3>
+                <h3 className="text-xl font-bold text-mustard">SEWASATHI SAHYOG FOUNDATION</h3>
                 <p className="text-sm text-gray-400 italic">"Together we can, Together we will"</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Helping Hand Foundation is a nonprofit organization devoted to enhancing the well-being of vulnerable
+              SEWASATHI SAHYOG FOUNDATION is a nonprofit organization devoted to enhancing the well-being of vulnerable
               populations by facilitating access to quality education, comprehensive healthcare services, and essential
               living resources
             </p>
@@ -159,7 +159,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 HELPING HAND FOUNDATION. All rights reserved. | Privacy Policy | Terms of Service
+            © 2025 SEWASATHI SAHYOG FOUNDATION. All rights reserved. | Privacy Policy | Terms of Service
           </p>
         </div>
       </div>
