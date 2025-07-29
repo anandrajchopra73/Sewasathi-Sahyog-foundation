@@ -10,21 +10,21 @@ export default function Hero() {
   const slides = [
     {
       image: "/images/community-outreach-hero.jpg",
-      title: "HELPING HAND FOUNDATION",
+      title: "SEWASATHI SAHYOG FOUNDATION",
       subtitle: "Empowering Communities Through Direct Action",
       description:
         "Witness our volunteers in action as we bring education and healthcare directly to the communities that need it most.",
     },
     {
       image: "/bg silde.jpg",
-      title: "HELPING HAND FOUNDATION",
+      title: "SEWASATHI SAHYOG FOUNDATION",
       subtitle: "Together We Can, Together We Will",
       description:
         "Join us in our mission to create lasting change through education, healthcare, and community support.",
     },
     {
       image: "/bg4.jpg?height=800&width=1200",
-      title: "HELPING HAND FOUNDATION",
+      title: "SEWASATHI SAHYOG FOUNDATION",
       subtitle: "Building Bridges to Better Futures",
       description:
         "Every contribution makes a difference in transforming lives and strengthening communities across India.",
