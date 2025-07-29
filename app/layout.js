@@ -1,10 +1,10 @@
 import "./globals.css"
 
 export const metadata = {
-  title: "HELPING HAND FOUNDATION - Together we can, Together we will",
+  title: "SEWASATHI SAHYOG FOUNDATION - Together we can, Together we will",
   description:
     "Enhancing the well-being of vulnerable populations by facilitating access to quality education, comprehensive healthcare services, and essential living resources.",
-    generator: 'v0.dev'
+    generator: 'ANAND'
 }
 
 export default function RootLayout({ children }) {
