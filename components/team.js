@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react"
+
 export default function Team() {
   const teamMembers = [
     // Board of Trustees
@@ -39,6 +43,15 @@ export default function Team() {
     },
   ]
 
+  const [expandedTrustees, setExpandedTrustees] = useState({})
+
+  const toggleTrusteeExpansion = (index) => {
+    setExpandedTrustees((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }))
+  }
+
   return (
     <section id="team" className="py-20 bg-white/10 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,7 +77,7 @@ export default function Team() {
                   >
                     <div className="h-60 w-full overflow-hidden">
                       <img
-                        src={member.image}
+                        src={member.image || "/placeholder.svg"}
                         alt={member.name}
                         className=" h-half w-full object-cover"
                       />
@@ -73,7 +86,15 @@ export default function Team() {
                     <div className="p-6">
                       <h4 className="text-xl font-semibold text-white mb-2">{member.name}</h4>
                       <p className="text-egg-nog font-medium mb-3">{member.role}</p>
-                      <p className="text-egg-nog/80">{member.bio}</p>
+                      <p className="text-egg-nog/80 leading-relaxed">
+                        {expandedTrustees[index] ? member.bio : `${member.bio.substring(0, 150)}...`}
+                      </p>
+                      <button
+                        onClick={() => toggleTrusteeExpansion(index)}
+                        className="mt-3 text-egg-nog hover:text-white transition-colors duration-200 text-sm font-medium underline"
+                      >
+                        {expandedTrustees[index] ? "Read Less" : "Read More"}
+                      </button>
                     </div>
                   </div>
                 ))}
@@ -93,7 +114,7 @@ export default function Team() {
                   >
                     <div className="h-60 w-full overflow-hidden">
                       <img
-                        src={member.image}
+                        src={member.image || "/placeholder.svg"}
                         alt={member.name}
                         className="h-half w-full object-cover"
                       />
