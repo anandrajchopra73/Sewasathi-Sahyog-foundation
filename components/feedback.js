@@ -102,7 +102,7 @@ export default function Feedback() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Word From our "सहारा"</h2>
           <p className="text-lg text-egg-nog max-w-3xl mx-auto">
-            Hear from the people whose lives have been touched by HELPING HAND FOUNDATION. These testimonials reflect
+            Hear from the people whose lives have been touched by SEWASATHI SAHYOG FOUNDATION. These testimonials reflect
             the real impact of our work in communities around the world.
           </p>
         </div>
@@ -205,7 +205,7 @@ export default function Feedback() {
             <button
               onClick={() =>
                 window.open(
-                  "https://docs.google.com/forms/d/e/1FAIpQLSd4ieEVJ0cCjFxN9eHzc5ZzfjBjPScTb0mAWS3hE-opi_ioDQ/viewform",
+                  "https://docs.google.com/forms/d/e/1FAIpQLScM63aZDBGmjPn1qo_rDan2QTzy792iUUUbVXrm5VTYrjgMXw/viewform",
                   "_blank",
                 )
               }

@@ -19,7 +19,7 @@ export default function Header() {
   const handleNavClick = (href) => {
     if (href === "#join") {
       window.open(
-        "https://docs.google.com/forms/d/e/1FAIpQLSd4ieEVJ0cCjFxN9eHzc5ZzfjBjPScTb0mAWS3hE-opi_ioDQ/viewform",
+        "https://docs.google.com/forms/d/e/1FAIpQLScM63aZDBGmjPn1qo_rDan2QTzy792iUUUbVXrm5VTYrjgMXw/viewform",
         "_blank",
       )
     } else {

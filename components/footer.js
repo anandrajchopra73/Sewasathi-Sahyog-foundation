@@ -49,7 +49,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.linkedin.com/company/helping-hand-foundation-2025/"
+                href="https://www.linkedin.com/company/sewasathi-sahyog-foundation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-copper transition-colors"
@@ -58,7 +58,7 @@ export default function Footer() {
                 <LinkedInIcon />
               </a>
               <a
-                href="https://www.instagram.com/helpinghand.foundation_?igsh=aW53MzFyMHk0ejBl"
+                href="https://www.instagram.com/sewasathisahyogfoundation?igsh=MW1sMmNieHBwdzNvYw%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-copper transition-colors"
@@ -74,7 +74,7 @@ export default function Footer() {
                 <Mail size={20} />
               </a>
               <a
-                href="https://www.whatsapp.com/channel/0029Vb5f6OjGehEFTe6Xf61p?fbclid=PAQ0xDSwLKElRleHRuA2FlbQIxMAABp18boTfXPfU_EHrkpUjUsafEVWCMizdbNrd1p_O7FEQMO6GlkEhkazVSrt7B_aem_8zUBx3rGfdyh_BMl5_MFPw"
+                href="https://whatsapp.com/channel/0029Vb5f6OjGehEFTe6Xf61p"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-copper transition-colors"
@@ -83,7 +83,7 @@ export default function Footer() {
                 <WhatsAppIcon />
               </a>
               <a
-                href="https://youtube.com/@helpinghandfoundationn?si=cex2YvgHCGfGHZER"
+                href="https://youtube.com/@sewasathisahyogngo?si=i1G6qHS23wiRqkob"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-copper transition-colors"
